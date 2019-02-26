@@ -9,14 +9,14 @@ import javax.persistence.Id;
 
 @Data
 @Entity
-public class CountryMain {
-
+public class Military {
+	
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private int id;
-
+	
     private String countryCode;
-    private String countryName;
-    private String region;
-    private String introduction;
+    private double militaryExpenditure;
+    private String militaryObligation;
+    private String militaryBranches;
 }

@@ -9,14 +9,14 @@ import javax.persistence.Id;
 
 @Data
 @Entity
-public class CountryMain {
+public class City {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private int id;
 
     private String countryCode;
-    private String countryName;
-    private String region;
-    private String introduction;
+    private String cityName;
+    private int population;
+    private Boolean capital;
 }
