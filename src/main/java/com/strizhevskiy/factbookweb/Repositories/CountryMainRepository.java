@@ -1,0 +1,1 @@
+package com.strizhevskiy.factbookweb.Repositories;import com.strizhevskiy.factbookweb.model.CountryMain;import org.springframework.data.repository.CrudRepository;public interface CountryMainRepository extends CrudRepository<CountryMain, Integer> {    CountryMain findCountryMainByCountryName(String countryName);}
