@@ -5,4 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface BorderRepository extends CrudRepository<Border, Integer> {
 
+    Border findByCountryCode(String countryCode);
 }

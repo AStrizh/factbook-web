@@ -10,10 +10,10 @@ and show that country's Introduction.
 Example request: http://localhost:8080/demo/country?country=Spain  //replace with your favorite country name. 
 
 As of last update:  
-POJOs and repositories were created to access and retrieve country data from the db.
+A hope page with a drop down was created. All the country's data is dumped to the user.
 
 Next Steps:  
-Create methods to display full country data to the user. 
+Improve front end so that country data is displayed neater. 
 
 
 ## Process

@@ -5,4 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface EnergyRepository extends CrudRepository<Energy, Integer> {
 
+    Energy findByCountryCode(String countryCode);
 }

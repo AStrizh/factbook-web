@@ -5,4 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface TransnationalRepository extends CrudRepository<Transnational, Integer> {
 
+    Transnational findByCountryCode(String countryCode);
 }
