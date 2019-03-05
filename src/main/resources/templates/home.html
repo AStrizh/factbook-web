@@ -5,18 +5,19 @@
     <title>Country Select</title>
 </head>
 <body>
-    <h1>Welcome to Factbook-Web</h1>
+    <h1 th:text="#{greeting}"></h1>
     <form style="display:inline-block" th:action="@{/country}" method="get" Id="SelectCountry">
         <select class="countries" name="countryName" onchange="doPageSubmit()">
-            <option value="0">Select Country</option>
+            <option value="0" th:text="#{select}"></option>
             <option th:each="country : ${countries}" th:value="${country}" th:text="${country}"></option>
         </select>
     </form>
-
 </body>
+
 <script>
-function doPageSubmit(){
-    document.getElementById("SelectCountry").submit();
-}
+    function doPageSubmit(){
+        document.getElementById("SelectCountry").submit();
+    }
 </script>
+
 </html>

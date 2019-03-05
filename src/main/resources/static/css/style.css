@@ -1,0 +1,15 @@
+h1 {
+    color: #78ab46;
+}
+
+tr:nth-child(odd) {
+    background: #eeeeee;
+}
+
+tr:nth-child(even) {
+    background: white;
+}
+
+.country-table{
+    width: 100%;
+}
