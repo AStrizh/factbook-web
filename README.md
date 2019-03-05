@@ -5,22 +5,21 @@ Goal:
 Use the Java Spring Framework to create a REST web application that can return JSON (or XML) requests for country data.
  
 Current Status:  
-The application can retrieve country data from the database created in [FactbookProject](https://github.com/AStrizh/FactbookProject)  
-and show that country's Introduction.  
-Example request: http://localhost:8080/demo/country?country=Spain  //replace with your favorite country name. 
+The application can retrieve country data from the database created in [FactbookProject](https://github.com/AStrizh/FactbookProject) 
+and show that country's data.  
 
 As of last update:  
-A hope page with a drop down was created. All the country's data is dumped to the user.
+Major improvements to UI. Geography and Society section now encoded.
 
 Next Steps:  
-Improve front end so that country data is displayed neater. 
-
+Fix bug that causes crash when section is null //example selecting Anguilla causes crash because there it has no energy section  
+Encode remaining sections
 
 ## Process
 
-This project uses a database created from country data provided by the CIA in 
-[The World Factbook](https://www.cia.gov/library/publications/the-world-factbook/)  
-to create a relational database.  
+This project uses a database created from country data provided by the CIA in
+[The World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) 
+to create a Spring web application.  
 The data is in the public domain and free for public use.
 [Download The World Factbook](https://www.cia.gov/library/publications/download/).  
   
