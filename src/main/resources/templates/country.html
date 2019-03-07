@@ -19,10 +19,10 @@
 
       <table class="country-section">
         <thead>
-        <tr><td><span style="font-size: 23px;font-weight: bold" th:text="#{geography}"></span></td></tr>
+        <tr><td colspan="2"><span style="font-size: 23px;font-weight: bold" th:text="#{geography}"></span></td></tr>
         </thead>
         <tbody>
-        <tr><td th:text="#{lat}"></td><td><span th:text="${#numbers.formatDecimal(geography.lat,0,1)}">2343651.23</span></td></tr>
+        <tr><td width="5%" th:text="#{lat}"></td><td><span th:text="${#numbers.formatDecimal(geography.lat,0,1)}">2343651.23</span></td></tr>
         <tr><td th:text="#{lng}"></td><td><span th:text="${#numbers.formatDecimal(geography.lng,0,1)}">2343651.23</span></td></tr>
         <tr><td th:text="#{landArea}"></td><td><span th:text="${#numbers.formatDecimal(geography.landArea,0,0)}">233245.05</span></td></tr>
         <tr><td th:text="#{waterArea}"></td><td><span th:text="${#numbers.formatDecimal(geography.waterArea,0,0)}">123532.27</span></td></tr>
@@ -34,32 +34,28 @@
         </tbody>
       </table>
     </td></tr>
-    </table>
+    </table><br>
   </div>
 
-
-
-  <br>
   <!--<div th:text="${society}"></div>-->
   <div>
     <table border="1" class="country-table"><tr><td>
-
       <table class="country-section">
         <thead>
-        <tr><td><span style="font-size: 23px;font-weight: bold" th:text="#{society}"></span></td></tr>
+        <tr><td colspan="2"><span style="font-size: 23px;font-weight: bold" th:text="#{society}"></span></td></tr>
         </thead>
         <tbody>
-        <tr><td th:text="#{population}"></td><td><span th:text="${#numbers.formatInteger(society.population,0,'COMMA')}">233245</span></td></tr>
+        <tr><td width="5%" th:text="#{population}"></td><td><span th:text="${#numbers.formatInteger(society.population,0,'COMMA')}">233245</span></td></tr>
         <tr><td th:text="#{Male0_14}"></td><td><span th:text="${#numbers.formatInteger(society.Male0_14,0,'COMMA')}">233245</span></td></tr>
-        <tr><td th:text="#{Female0_14}"></td><td><span th:text="${#numbers.formatInteger(society.Female0_14,0,'COMMA')}">233245</span></td></tr>		
-        <tr><td th:text="#{Male15_24}"></td><td><span th:text="${#numbers.formatInteger(society.Male15_24,0,'COMMA')}">233245</span></td></tr>		
-        <tr><td th:text="#{Female15_24}"></td><td><span th:text="${#numbers.formatInteger(society.Female15_24,0,'COMMA')}">233245</span></td></tr>		
-        <tr><td th:text="#{Male25_54}"></td><td><span th:text="${#numbers.formatInteger(society.Male25_54,0,'COMMA')}">233245</span></td></tr>		
-        <tr><td th:text="#{Female25_54}"></td><td><span th:text="${#numbers.formatInteger(society.Female25_54,0,'COMMA')}">233245</span></td></tr>		
-        <tr><td th:text="#{Male55_64}"></td><td><span th:text="${#numbers.formatInteger(society.Male55_64,0,'COMMA')}">233245</span></td></tr>		
+        <tr><td th:text="#{Female0_14}"></td><td><span th:text="${#numbers.formatInteger(society.Female0_14,0,'COMMA')}">233245</span></td></tr>        
+        <tr><td th:text="#{Male15_24}"></td><td><span th:text="${#numbers.formatInteger(society.Male15_24,0,'COMMA')}">233245</span></td></tr>      
+        <tr><td th:text="#{Female15_24}"></td><td><span th:text="${#numbers.formatInteger(society.Female15_24,0,'COMMA')}">233245</span></td></tr>      
+        <tr><td th:text="#{Male25_54}"></td><td><span th:text="${#numbers.formatInteger(society.Male25_54,0,'COMMA')}">233245</span></td></tr>      
+        <tr><td th:text="#{Female25_54}"></td><td><span th:text="${#numbers.formatInteger(society.Female25_54,0,'COMMA')}">233245</span></td></tr>      
+        <tr><td th:text="#{Male55_64}"></td><td><span th:text="${#numbers.formatInteger(society.Male55_64,0,'COMMA')}">233245</span></td></tr>      
         <tr><td th:text="#{Female55_64}"></td><td><span th:text="${#numbers.formatInteger(society.Female55_64,0,'COMMA')}">233245</span></td></tr>
-        <tr><td th:text="#{Male65}"></td><td><span th:text="${#numbers.formatInteger(society.Male65,0,'COMMA')}">233245</span></td></tr>		
-        <tr><td th:text="#{Female65}"></td><td><span th:text="${#numbers.formatInteger(society.Female65,0,'COMMA')}">233245</span></td></tr>			
+        <tr><td th:text="#{Male65}"></td><td><span th:text="${#numbers.formatInteger(society.Male65,0,'COMMA')}">233245</span></td></tr>        
+        <tr><td th:text="#{Female65}"></td><td><span th:text="${#numbers.formatInteger(society.Female65,0,'COMMA')}">233245</span></td></tr>            
         <tr><td th:text="#{youthDependencyRatio}"></td><td><span th:text="${#numbers.formatDecimal(society.youthDependencyRatio,0,1)}">18.3</span></td></tr>
         <tr><td th:text="#{elderlyDependencyRatio}"></td><td><span th:text="${#numbers.formatDecimal(society.elderlyDependencyRatio,0,1)}">18.3</span></td></tr>
         <tr><td th:text="#{potentialSupportRatio}"></td><td><span th:text="${#numbers.formatDecimal(society.potentialSupportRatio,0,1)}">18.3</span></td></tr>
@@ -70,8 +66,8 @@
         <tr><td th:text="#{deathRatePer1K}"></td><td><span th:text="${#numbers.formatDecimal(society.deathRatePer1K,0,1)}">18.3</span></td></tr>
         <tr><td th:text="#{urbanPopulation}"></td><td><span th:text="${#numbers.formatDecimal(society.urbanPopulation,0,1)}">18.3</span></td></tr>
         <tr><td th:text="#{urbanizationRate}"></td><td><span th:text="${#numbers.formatDecimal(society.urbanizationRate,0,1)}">18.3</span></td></tr>
-		    <tr><td th:text="#{motherMeanAgeAtFirstBirth}"></td><td><span th:text="${#numbers.formatDecimal(society.motherMeanAgeAtFirstBirth	,0,1)}">18.3</span></td></tr>
-		    <tr><td th:text="#{maternalMortalityRatePer100K}"></td><td><span th:text="${#numbers.formatInteger(society.maternalMortalityRatePer100K,0,'COMMA')}">233245</span></td></tr>
+        <tr><td th:text="#{motherMeanAgeAtFirstBirth}"></td><td><span th:text="${#numbers.formatDecimal(society.motherMeanAgeAtFirstBirth   ,0,1)}">18.3</span></td></tr>
+        <tr><td th:text="#{maternalMortalityRatePer100K}"></td><td><span th:text="${#numbers.formatInteger(society.maternalMortalityRatePer100K,0,'COMMA')}">233245</span></td></tr>
         <tr><td th:text="#{infantMaleMortalityRatePer1K}"></td><td><span th:text="${#numbers.formatDecimal(society.infantMaleMortalityRatePer1K,0,1)}">18.3</span></td></tr>
         <tr><td th:text="#{infantFemaleMortalityRatePer1K}"></td><td><span th:text="${#numbers.formatDecimal(society.infantFemaleMortalityRatePer1K,0,1)}">18.3</span></td></tr>
         <tr><td th:text="#{maleLifeExpectancy}"></td><td><span th:text="${#numbers.formatDecimal(society.maleLifeExpectancy,0,1)}">18.3</span></td></tr>
@@ -92,159 +88,267 @@
         <tr><td th:text="#{adultObesityPCT}"></td><td><span th:text="${#numbers.formatDecimal(society.adultObesityPCT,0,1)}">18.3</span>%</td></tr>
         <tr><td th:text="#{educationExpenditures}"></td><td><span th:text="${#numbers.formatDecimal(society.educationExpenditures,0,1)}">18.3</span></td></tr>
         <tr><td th:text="#{maleLiteracy}"></td><td><span th:text="${#numbers.formatDecimal(society.maleLiteracy,0,1)}">18.3</span></td></tr>
-        <tr><td th:text="#{femaleLiteracy}"></td><td><span th:text="${#numbers.formatDecimal(society.femaleLiteracy	,0,1)}">18.3</span></td></tr>
+        <tr><td th:text="#{femaleLiteracy}"></td><td><span th:text="${#numbers.formatDecimal(society.femaleLiteracy ,0,1)}">18.3</span></td></tr>
         <tr><td th:text="#{maleSchoolLifeExpectancy}"></td><td><span th:text="${#numbers.formatInteger(society.maleSchoolLifeExpectancy,0,'COMMA')}">233245</span></td></tr>
-        <tr><td th:text="#{femaleSchoolLifeExpectancy}"></td><td><span th:text="${#numbers.formatInteger(society.femaleSchoolLifeExpectancy,0,'COMMA')}">233245</span></td></tr>			
+        <tr><td th:text="#{femaleSchoolLifeExpectancy}"></td><td><span th:text="${#numbers.formatInteger(society.femaleSchoolLifeExpectancy,0,'COMMA')}">233245</span></td></tr>            
         <tr><td th:text="#{maleUnemployment}"></td><td><span th:text="${#numbers.formatDecimal(society.maleUnemployment,0,1)}">18.3</span></td></tr>
         <tr><td th:text="#{femaleUnemployment}"></td><td><span th:text="${#numbers.formatDecimal(society.femaleUnemployment,0,1)}">18.3</span></td></tr>
         </tbody>
       </table>
     </td></tr>
-    </table>
+    </table><br>
   </div>
 
+  <!--<div th:text="${government}"></div>-->
+  <div>
+    <table border="1" class="country-table"><tr><td>
+      <table class="country-section">
+        <thead>
+        <tr><td colspan="2"><span style="font-size: 23px;font-weight: bold" th:text="#{government}"></span></td></tr>
+        </thead>
+        <tbody>
+        <tr><td width="5%" th:text="#{governmentType}"></td><td><span th:text="${government.governmentType}"></span></td></tr>
+        <tr><td th:text="#{capitalLat}"></td><td><span th:text="${government.capitalLat}"></span></td></tr>
+        <tr><td th:text="#{capitalLng}"></td><td><span th:text="${government.capitalLng}"></span></td></tr>
+        <tr><td th:text="#{timeDifference}"></td><td><span th:text="${government.timeDifference}"></span></td></tr>
+        <tr><td th:text="#{daylightSavingTime}"></td><td><span th:text="${government.daylightSavingTime}"></span></td></tr>
+        <tr><td th:text="#{independenceDate}"></td><td><span th:text="${government.independenceDate}"></span></td></tr>
+        <tr><td th:text="#{nationalHoliday}"></td><td><span th:text="${government.nationalHoliday}"></span></td></tr>
+        <tr><td th:text="#{legalSystem}"></td><td><span th:text="${government.legalSystem}"></span></td></tr>
+        <tr><td th:text="#{citizenshipByBirth}"></td><td><span th:text="${government.citizenshipByBirth}"></span></td></tr>
+        <tr><td th:text="#{citizenshipByDescent}"></td><td><span th:text="${government.citizenshipByDescent}"></span></td></tr>
+        <tr><td th:text="#{dualCitizenship}"></td><td><span th:text="${government.dualCitizenship}"></span></td></tr>
+        <tr><td th:text="#{naturalization}"></td><td><span th:text="${government.naturalization}"></span></td></tr>
+        <tr><td th:text="#{suffrageAge}"></td><td><span th:text="${government.suffrageAge}"></span></td></tr>
+        <tr><td th:text="#{suffrageCompulsory}"></td><td><span th:text="${government.suffrageCompulsory}"></span></td></tr>
+        <tr><td th:text="#{chiefOfState}"></td><td><span th:text="${government.chiefOfState}"></span></td></tr>
+        <tr><td th:text="#{headOfGovernment}"></td><td><span th:text="${government.headOfGovernment}"></span></td></tr>
+        <tr><td th:text="#{diplomatToUS}"></td><td><span th:text="${government.diplomatToUS}"></span></td></tr>
+        <tr><td th:text="#{diplomatFromUS}"></td><td><span th:text="${government.diplomatFromUS}"></span></td></tr>
+        </tbody>
+      </table>
+    </td></tr>
+    </table><br>
+  </div>
 
-
-
-  <br>
   <!--<div th:text="${economy}"></div>-->
   <div>
     <table border="1" class="country-table"><tr><td>
       <table class="country-section">
         <thead>
-        <tr><td><span style="font-size: 23px;font-weight: bold" th:text="#{government}"></span></td></tr>
+        <tr><td colspan="2"><span style="font-size: 23px;font-weight: bold" th:text="#{economy}"></span></td></tr>
         </thead>
         <tbody>
-        <tr><td>Head of State: </td><td><span th:text="${government.headOfGovernment}"></span></td></tr>
-        <tr><td>Chief of State: </td><td><span th:text="${government.chiefOfState}"></span></td></tr>
-        <tr><td>Government Type: </td><td><span th:text="${government.governmentType}"></span></td></tr>
-        <tr><td>Diplomat to US: </td><td><span th:text="${government.diplomatToUS}"></span></td></tr>
-        <tr><td>Diplomat from US: </td><td><span th:text="${government.diplomatFromUS}"></span></td></tr>
+        <tr><td width="5%" th:text="#{overview}"></td><td><span th:text="${economy.overview}"></span></td></tr>
+        <tr><td th:text="#{gDPPurchasingPowerParity}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.gDPPurchasingPowerParity, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{gDPOfficialExchangeRate}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.gDPOfficialExchangeRate, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{gDPRealGrowthRate}"></td><td><span th:text="${#numbers.formatDecimal(economy.gDPRealGrowthRate, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{gDPPerCapita}"></td><td>$<span th:text="${#numbers.formatInteger(economy.gDPPerCapita,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{grossNationalSaving}"></td><td><span th:text="${#numbers.formatDecimal(economy.grossNationalSaving, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{householdConsumption}"></td><td><span th:text="${#numbers.formatDecimal(economy.householdConsumption, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{governmentConsumption}"></td><td><span th:text="${#numbers.formatDecimal(economy.governmentConsumption, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{investmentFixedCapital}"></td><td><span th:text="${#numbers.formatDecimal(economy.investmentFixedCapital, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{investmentInventories}"></td><td><span th:text="${#numbers.formatDecimal(economy.investmentInventories, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{exports}"></td><td><span th:text="${#numbers.formatDecimal(economy.exports, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{imports}"></td><td><span th:text="${#numbers.formatDecimal(economy.imports, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{gDPAgriculture}"></td><td><span th:text="${#numbers.formatDecimal(economy.gDPAgriculture, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{gDPIndustry}"></td><td><span th:text="${#numbers.formatDecimal(economy.gDPIndustry, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{gDPServices}"></td><td><span th:text="${#numbers.formatDecimal(economy.gDPServices, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{agricultureProducts}"></td><td><span th:text="${economy.agricultureProducts}"></span></td></tr>
+        <tr><td th:text="#{industries}"></td><td><span th:text="${economy.industries}"></span></td></tr>
+        <tr><td th:text="#{industrialGrowth}"></td><td><span th:text="${#numbers.formatDecimal(economy.industrialGrowth, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{laborForce}"></td><td><span th:text="${#numbers.formatInteger(economy.laborForce,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{occupationAgriculture}"></td><td><span th:text="${#numbers.formatDecimal(economy.occupationAgriculture, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{occupationIndustry}"></td><td><span th:text="${#numbers.formatDecimal(economy.occupationIndustry, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{occupationServices}"></td><td><span th:text="${#numbers.formatDecimal(economy.occupationServices, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{unemploymentRate}"></td><td><span th:text="${#numbers.formatDecimal(economy.unemploymentRate, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{belowPovertyLine}"></td><td><span th:text="${#numbers.formatDecimal(economy.belowPovertyLine, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{lowest10PCTConsumption}"></td><td><span th:text="${#numbers.formatDecimal(economy.lowest10PCTConsumption, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{highest10PCTConsumption}"></td><td><span th:text="${#numbers.formatDecimal(economy.highest10PCTConsumption, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{giniIndexIncome}"></td><td><span th:text="${#numbers.formatDecimal(economy.giniIndexIncome, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{revenues}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.revenues, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{expenditures}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.expenditures, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{taxes}"></td><td><span th:text="${#numbers.formatDecimal(economy.taxes, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{budgetSurplus}"></td><td><span th:text="${#numbers.formatDecimal(economy.budgetSurplus, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{publicDebt}"></td><td><span th:text="${#numbers.formatDecimal(economy.publicDebt, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{fiscalYear}"></td><td><span th:text="${economy.fiscalYear}"></span></td></tr>
+        <tr><td th:text="#{inflation}"></td><td><span th:text="${#numbers.formatDecimal(economy.inflation, 0, 'COMMA', 1, 'POINT')}"></span>%</td>
+        <tr><td th:text="#{centralBankDiscount}"></td><td><span th:text="${#numbers.formatDecimal(economy.centralBankDiscount, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{commercialBankLending}"></td><td><span th:text="${#numbers.formatDecimal(economy.commercialBankLending, 0, 'COMMA', 1, 'POINT')}">%</span></td></tr>
+        <tr><td th:text="#{narrowMoney}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.narrowMoney, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{broadMoney}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.broadMoney, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{domesticCredit}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.domesticCredit, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{valueTradedShares}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.valueTradedShares, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{currentAccountBalance}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.currentAccountBalance, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{exportsTotal}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.exportsTotal, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{exportsCommodities}"></td><td>$<span th:text="${economy.exportsCommodities}"></span></td></tr>
+        <tr><td th:text="#{exportsPartners}"></td><td><span th:text="${economy.exportsPartners}"></span></td></tr>
+        <tr><td th:text="#{importsTotal}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.importsTotal, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{importsCommodities}"></td><td><span th:text="${economy.importsCommodities}"></span></td></tr>
+        <tr><td th:text="#{importsPartners}"></td><td><span th:text="${economy.importsPartners}"></span></td></tr>
+        <tr><td th:text="#{foreignGoldReserves}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.foreignGoldReserves, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{debtExternal}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.debtExternal, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{foreignInvestmentHome}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.foreignInvestmentHome, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{foreignInvestmentAbroad}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.foreignInvestmentAbroad, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{exchangeRate}"></td><td><span th:text="${economy.currencyText}"></span>&nbsp;<span th:text="${#numbers.formatDecimal(economy.exchangeRate, 1, 'COMMA', 1, 'POINT')}"></span></td></tr>
         </tbody>
       </table>
     </td></tr>
-    </table>
+    </table><br>
   </div>
 
-
-
-  <br>
-  <!--<div th:text="${economy}"></div>-->
-  <div>
-    <table border="1" class="country-table"><tr><td>
-      <table class="country-section">
-        <thead>
-        <tr><td><span style="font-size: 23px;font-weight: bold" th:text="#{economy}"></span></td></tr>
-        </thead>
-        <tbody>
-        <tr><td>Overview: </td><td><span th:text="${economy.overview}"></span></td></tr>
-        <tr><td>GDP PPP: </td> <td>$<span th:text="${#numbers.formatDecimal(economy.gDPPurchasingPowerParity, 0, 'COMMA', 0, 'POINT')}">10.00</span></td></tr>
-        <tr><td>GDP Official Exchange Rate: </td><td>$<span th:text="${#numbers.formatDecimal(economy.gDPOfficialExchangeRate, 0, 'COMMA', 0, 'POINT')}">10.00</span></td></tr>
-        <tr><td>GDP per capita: </td><td><span th:text="${economy.gDPPerCapita}"></span></td></tr>
-        <tr><td>Labor Force: </td><td><span th:text="${economy.laborForce}"></span></td></tr>
-        </tbody>
-      </table>
-    </td></tr>
-    </table>
-  </div>
-
-
-  <br>
   <!--<div th:text="${energy}"></div>-->
-  <div>
+  <div th:if="${energy}">
     <table border="1" class="country-table"><tr><td>
       <table class="country-section">
         <thead>
-        <tr><td><span style="font-size: 23px;font-weight: bold" th:text="#{energy}"></span></td></tr>
+        <tr><td colspan="2"><span style="font-size: 23px;font-weight: bold" th:text="#{energy}"></span></td></tr>
         </thead>
         <tbody>
-        <tr><td>Percentage With electricity: </td><td><span th:text="${#numbers.formatDecimal(energy.electrificationPopulationPCT,0,1)}"></span>%</td></tr>
-        <tr><td>Population Without Electricity: </td><td><span th:text="${#numbers.formatInteger(energy.withoutElectricity,0,'COMMA')}"></span></td></tr>
-        <tr><td>Proved Oil Reserves in thousands of barrels: </td><td><span th:text="${#numbers.formatInteger(energy.oilProvedReservesThousandsBarrels,0,'COMMA')}">10.00</span></td></tr>
-        <tr><td>Refined Petroleum Production barrels per day: </td><td><span th:text="${#numbers.formatInteger(energy.refinedPetroleumProductionBarrelsPerDay,0,'COMMA')}"></span></td></tr>
-        <tr><td>Natural Gas Production million cubic meters: </td><td><span th:text="${#numbers.formatInteger(energy.naturalGasProductionMillionCubicMeters,0,'COMMA')}"></span></td></tr>
+        <tr><td width="5%" th:text="#{withoutElectricity}"></td><td><span th:text="${#numbers.formatInteger(energy.withoutElectricity,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{electrificationPopulationPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electrificationPopulationPCT, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{electrificationUrbanPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electrificationUrbanPCT, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{electrificationRuralPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electrificationRuralPCT, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{electricityProductionMillionskWh}"></td><td><span th:text="${#numbers.formatInteger(energy.electricityProductionMillionskWh,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{electricityConsumptionMillionskWh}"></td><td><span th:text="${#numbers.formatInteger(energy.electricityConsumptionMillionskWh,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{electricityExportsMillionskWh}"></td><td><span th:text="${#numbers.formatInteger(energy.electricityExportsMillionskWh,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{electricityImportsMillionskWh}"></td><td><span th:text="${#numbers.formatInteger(energy.electricityImportsMillionskWh,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{electricityCapacityThousandskW}"></td><td><span th:text="${#numbers.formatInteger(energy.electricityCapacityThousandskW,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{electricityFossilFuelsPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electricityFossilFuelsPCT, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{electricityNuclearFuelsPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electricityNuclearFuelsPCT, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{electricityHydroelectricPlantsPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electricityHydroelectricPlantsPCT, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{electricityOtherRenewableSourcesPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electricityOtherRenewableSourcesPCT, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{oilProductionBarrelsPerDay}"></td><td><span th:text="${#numbers.formatInteger(energy.oilProductionBarrelsPerDay,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{oilExportsBarrelsPerDay}"></td><td><span th:text="${#numbers.formatInteger(energy.oilExportsBarrelsPerDay,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{oilImportsBarrelsPerDay}"></td><td><span th:text="${#numbers.formatInteger(energy.oilImportsBarrelsPerDay,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{oilProvedReservesThousandsBarrels}"></td><td><span th:text="${#numbers.formatInteger(energy.oilProvedReservesThousandsBarrels,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{refinedPetroleumProductionBarrelsPerDay}"></td><td><span th:text="${#numbers.formatInteger(energy.refinedPetroleumProductionBarrelsPerDay,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{refinedPetroleumConsumptionBarrelsPerDay}"></td><td><span th:text="${#numbers.formatInteger(energy.refinedPetroleumConsumptionBarrelsPerDay,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{refinedPetroleumExportsBarrelsPerDay}"></td><td><span th:text="${#numbers.formatInteger(energy.refinedPetroleumExportsBarrelsPerDay,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{refinedPetroleumImportsBarrelsPerDay}"></td><td><span th:text="${#numbers.formatInteger(energy.refinedPetroleumImportsBarrelsPerDay,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{naturalGasProductionMillionCubicMeters}"></td><td><span th:text="${#numbers.formatInteger(energy.naturalGasProductionMillionCubicMeters,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{naturalGasConsumptionMillionCubicMeters}"></td><td><span th:text="${#numbers.formatInteger(energy.naturalGasConsumptionMillionCubicMeters,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{naturalGasExportsMillionCubicMeters}"></td><td><span th:text="${#numbers.formatInteger(energy.naturalGasExportsMillionCubicMeters,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{naturalGasImportsMillionCubicMeters}"></td><td><span th:text="${#numbers.formatInteger(energy.naturalGasImportsMillionCubicMeters,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{naturalGasProvedReservesMillionCubicMeters}"></td><td><span th:text="${#numbers.formatInteger(energy.naturalGasProvedReservesMillionCubicMeters,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{carbonDioxideEmissionsThousandsMetricTons}"></td><td><span th:text="${#numbers.formatInteger(energy.carbonDioxideEmissionsThousandsMetricTons,0,'COMMA')}"></span></td></tr>
         </tbody>
       </table>
     </td></tr>
-    </table>
+    </table><br>
   </div>
 
-
-
-
-
-
-  <br>
   <!--<div th:text="${communications}"></div>-->
   <div>
     <table border="1" class="country-table"><tr><td>
       <table class="country-section">
         <thead>
-        <tr><td><span style="font-size: 23px;font-weight: bold" th:text="#{communications}"></span></td></tr>
+        <tr><td colspan="2"><span style="font-size: 23px;font-weight: bold" th:text="#{communications}"></span></td></tr>
         </thead>
         <tbody>
-
-        <!--Insert "Communications" Here-->
-
+        <tr><td width="5%"  th:text="#{totalFixedLines}"></td><td><span th:text="${#numbers.formatInteger(communications.totalFixedLines,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{fixedLinesPer100}"></td><td><span th:text="${#numbers.formatInteger(communications.fixedLinesPer100,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{totalCellular}"></td><td><span th:text="${#numbers.formatInteger(communications.totalCellular,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{cellularPer100}"></td><td><span th:text="${#numbers.formatInteger(communications.cellularPer100,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{telephoneGeneralAssessment}"></td><td><span th:text="${communications.telephoneGeneralAssessment}"></span></td></tr>
+        <tr><td th:text="#{telephoneSystemDomestic}"></td><td><span th:text="${communications.telephoneSystemDomestic}"></span></td></tr>
+        <tr><td th:text="#{telephoneSystemInternational}"></td><td><span th:text="${communications.telephoneSystemInternational}"></span></td></tr>
+        <tr><td th:text="#{broadcastMedia}"></td><td><span th:text="${communications.broadcastMedia}"></span></td></tr>
+        <tr><td th:text="#{internetCode}"></td><td><span th:text="${communications.internetCode}"></span></td></tr>
+        <tr><td th:text="#{internetUsers}"></td><td><span th:text="${#numbers.formatInteger(communications.internetUsers,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{internetUsersPCT}"></td><td><span th:text="${#numbers.formatDecimal(communications.internetUsersPCT, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
         </tbody>
       </table>
     </td></tr>
-    </table>
+    </table><br>
   </div>
 
-
-
-  <br>
   <!--<div th:text="${transportation}"></div>-->
   <div>
     <table border="1" class="country-table"><tr><td>
-      <table class="country-section">
+      <table class="country-section" width="100%">
         <thead>
-        <tr><td><span style="font-size: 23px;font-weight: bold" th:text="#{transportation}"></span></td></tr>
+        <tr><td colspan="2"><span style="font-size: 23px;font-weight: bold" th:text="#{transportation}"></span></td></tr>
         </thead>
         <tbody>
-
-        <!--Insert "Transportation" Here-->
-
+        <tr><td width="5%" th:text="#{registeredAirCarriers}"></td><td><span th:text="${#numbers.formatInteger(transportation.registeredAirCarriers,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{airCarriersAircraft}"></td><td><span th:text="${#numbers.formatInteger(transportation.airCarriersAircraft,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{airCarrierPassengers}"></td><td><span th:text="${#numbers.formatInteger(transportation.airCarrierPassengers,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{airCarrierFreight}"></td><td><span th:text="${#numbers.formatInteger(transportation.airCarrierFreight,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{civilAircraftCode}"></td><td><span th:text="${transportation.civilAircraftCode}"></span></td></tr>
+        <tr><td th:text="#{totalAirports}"></td><td><span th:text="${#numbers.formatInteger(transportation.totalAirports,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{pavedRunways}"></td><td><span th:text="${#numbers.formatInteger(transportation.pavedRunways,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{pavedOver3047m}"></td><td><span th:text="${#numbers.formatInteger(transportation.pavedOver3047m,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{pavedBetween2438TO3047m}"></td><td><span th:text="${#numbers.formatInteger(transportation.pavedBetween2438TO3047m,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{pavedBetween1524TO2437m}"></td><td><span th:text="${#numbers.formatInteger(transportation.pavedBetween1524TO2437m,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{pavedBetween914TO1523m}"></td><td><span th:text="${#numbers.formatInteger(transportation.pavedBetween914TO1523m,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{pavedUnder914m}"></td><td><span th:text="${#numbers.formatInteger(transportation.pavedUnder914m,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{unpavedRunways}"></td><td><span th:text="${#numbers.formatInteger(transportation.unpavedRunways,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{unpavedOver3047m}"></td><td><span th:text="${#numbers.formatInteger(transportation.unpavedOver3047m,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{unpavedBetween2438TO3047m}"></td><td><span th:text="${#numbers.formatInteger(transportation.unpavedBetween2438TO3047m,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{unpavedBetween1524TO2437m}"></td><td><span th:text="${#numbers.formatInteger(transportation.unpavedBetween1524TO2437m,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{unpavedBetween914TO1523m}"></td><td><span th:text="${#numbers.formatInteger(transportation.unpavedBetween914TO1523m,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{unpavedUnder914m}"></td><td><span th:text="${#numbers.formatInteger(transportation.unpavedUnder914m,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{heliports}"></td><td><span th:text="${#numbers.formatInteger(transportation.heliports,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{pipelines}"></td><td><span th:text="${transportation.pipelines}"></span></td></tr>
+        <tr><td th:text="#{totalRailwayKM}"></td><td><span th:text="${#numbers.formatInteger(transportation.totalRailwayKM,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{broadGaugeKM}"></td><td><span th:text="${#numbers.formatInteger(transportation.broadGaugeKM,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{standardGaugeKM}"></td><td><span th:text="${#numbers.formatInteger(transportation.standardGaugeKM,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{narrowGaugeKM}"></td><td><span th:text="${#numbers.formatInteger(transportation.narrowGaugeKM,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{dualGaugeKM}"></td><td><span th:text="${#numbers.formatInteger(transportation.dualGaugeKM,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{totalRoadwaysKM}"></td><td><span th:text="${#numbers.formatInteger(transportation.totalRoadwaysKM,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{pavedRoadwaysKM}"></td><td><span th:text="${#numbers.formatInteger(transportation.pavedRoadwaysKM,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{unpavedRoadwaysKM}"></td><td><span th:text="${#numbers.formatInteger(transportation.unpavedRoadwaysKM,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{waterwaysKM}"></td><td><span th:text="${#numbers.formatInteger(transportation.waterwaysKM,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{merchantMarine}"></td><td><span th:text="${#numbers.formatInteger(transportation.merchantMarine,0,'COMMA')}"></span></td></tr>
+        <tr><td th:text="#{merchantMarineType}"></td><td><span th:text="${transportation.merchantMarineType}"></span></td></tr>
+        <tr><td th:text="#{foreignOwned}"></td><td><span th:text="${transportation.foreignOwned}"></span></td></tr>
+        <tr><td th:text="#{registeredInternationally}"></td><td><span th:text="${transportation.registeredInternationally}"></span></td></tr>
+        <tr><td th:text="#{majorSeaport}"></td><td><span th:text="${transportation.majorSeaport}"></span></td></tr>
+        <tr><td th:text="#{riverPort}"></td><td><span th:text="${transportation.riverPort}"></span></td></tr>
+        <tr><td th:text="#{oilTerminal}"></td><td><span th:text="${transportation.oilTerminal}"></span></td></tr>
+        <tr><td th:text="#{dryCargoPort}"></td><td><span th:text="${transportation.dryCargoPort}"></span></td></tr>
+        <tr><td th:text="#{containerPort}"></td><td><span th:text="${transportation.containerPort}"></span></td></tr>
+        <tr><td th:text="#{lNGTerminal}"></td><td><span th:text="${transportation.lNGTerminal}"></span></td></tr>
+        <tr><td th:text="#{cruisePort}"></td><td><span th:text="${transportation.cruisePort}"></span></td></tr>
         </tbody>
       </table>
     </td></tr>
-    </table>
+    </table><br>
   </div>
 
-
-
-
-  <br>
   <!--<div th:text="${military}"></div>-->
   <div>
     <table border="1" class="country-table"><tr><td>
       <table class="country-section">
         <thead>
-        <tr><td><span style="font-size: 23px;font-weight: bold" th:text="#{military}"></span></td></tr>
+        <tr><td colspan="2"><span style="font-size: 23px;font-weight: bold" th:text="#{military}"></span></td></tr>
         </thead>
         <tbody>
-
-        <!--Insert "Military" Here-->
-
+        <tr><td width="5%" th:text="#{militaryExpenditure}"></td><td><span th:text="${#numbers.formatDecimal(military.militaryExpenditure, 0, 'COMMA', 1, 'POINT')}"></span>% of GDP</td></tr>
+        <tr><td th:text="#{militaryObligation}"></td><td><span th:text="${military.militaryObligation}"></span></td></tr>
+        <tr><td th:text="#{militaryBranches}"></td><td><span th:text="${military.militaryBranches}"></span></td></tr>
         </tbody>
       </table>
     </td></tr>
-    </table>
+    </table><br>
   </div>
 
-  <br>
   <!--<div th:text="${transnational}"></div>-->
   <div>
     <table border="1" class="country-table"><tr><td>
       <table class="country-section">
         <thead>
-        <tr><td><span style="font-size: 23px;font-weight: bold" th:text="#{transnational}"></span></td></tr>
+        <tr><td colspan="2"><span style="font-size: 23px;font-weight: bold" th:text="#{transnational}"></span></td></tr>
         </thead>
         <tbody>
-
-        <!--Insert "Transnational" Here-->
-
+        <tr><td width="5%" th:text="#{disputes}"></td><td><span th:text="${transnational.disputes}"></span></td></tr>
+        <tr><td th:text="#{refugees}"></td><td><span th:text="${transnational.refugees}"></span></td></tr>
+        <tr><td th:text="#{iDPs}"></td><td><span th:text="${transnational.iDPs}"></span></td></tr>
+        <tr><td th:text="#{statelessPersons}"></td><td><span th:text="${transnational.statelessPersons}"></span></td></tr>
+        <tr><td th:text="#{traffickingSituation}"></td><td><span th:text="${transnational.traffickingSituation}"></span></td></tr>
+        <tr><td th:text="#{traffickingTierRating}"></td><td><span th:text="${transnational.traffickingTierRating}"></span></td></tr>
+        <tr><td th:text="#{illicitDrugs}"></td><td><span th:text="${transnational.illicitDrugs}"></span></td></tr>
         </tbody>
       </table>
     </td></tr>

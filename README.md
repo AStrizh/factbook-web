@@ -9,11 +9,10 @@ The application can retrieve country data from the database created in [Factbook
 and show that country's data.  
 
 As of last update:  
-Major improvements to UI. Geography and Society section now encoded.
+All country sections can be examined. If a section is absent it will not show up in the country view.
 
 Next Steps:  
-Fix bug that causes crash when section is null //example selecting Anguilla causes crash because there it has no energy section  
-Encode remaining sections
+Create the ability to compare statistics for two nations.
 
 ## Process
 
