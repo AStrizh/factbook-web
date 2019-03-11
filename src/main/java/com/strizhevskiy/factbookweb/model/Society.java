@@ -68,4 +68,12 @@ public class Society {
     private int femaleSchoolLifeExpectancy;
     private double maleUnemployment;
     private double femaleUnemployment;
+
+    public int totalMale(){
+        return (Male0_14 + Male15_24 + Male25_54 + Male55_64 + Male65);
+    }
+
+    public int totalFemale(){
+        return (Female0_14 + Female15_24 + Female25_54 + Female55_64 + Female65);
+    }
 }

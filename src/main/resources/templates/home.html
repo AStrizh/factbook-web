@@ -12,6 +12,19 @@
             <option th:each="country : ${countries}" th:value="${country}" th:text="${country}"></option>
         </select>
     </form>
+
+    <br>
+    <h3>Select Countries for comparison</h3>
+    <form th:action="@{/compare}" method="get">
+        <div th:each="country : ${countries}" >
+            <input type="checkbox" th:value="${country}" th:name="countryNames"/>
+            <label th:text="${country}"></label>
+        </div>
+        <br />
+        <input type="submit" />
+    </form>
+
+
 </body>
 
 <script>
