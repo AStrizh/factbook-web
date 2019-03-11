@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-//@RequestMapping(path="/country")
 public class CountryController {
 
     @Autowired
@@ -50,7 +49,7 @@ public class CountryController {
 
         CountryMain country = countryMainRepository.findCountryMainByCountryName(countryName);
 
-        model.addAttribute("countryMain", country);
+        model.addAttribute("countryMain", countryMainRepository.findByCountryCode(country.getCountryCode()));
         model.addAttribute("geography", geographyRepository.findByCountryCode(country.getCountryCode()));
         model.addAttribute("society", societyRepository.findByCountryCode(country.getCountryCode()));
         model.addAttribute("government", governmentRepository.findByCountryCode(country.getCountryCode()));
@@ -60,6 +59,9 @@ public class CountryController {
         model.addAttribute("transportation", transportationRepository.findByCountryCode(country.getCountryCode()));
         model.addAttribute("military", militaryRepository.findByCountryCode(country.getCountryCode()));
         model.addAttribute("transnational", transnationalRepository.findByCountryCode(country.getCountryCode()));
+
+        model.addAttribute("countryFlag", country.getCountryCode().toLowerCase() + "-lgflag.gif");
+        model.addAttribute("countryMap", country.getCountryCode().toLowerCase() + "-map.gif");
 
         return "country";
     }
