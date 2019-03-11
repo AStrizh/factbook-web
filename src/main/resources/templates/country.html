@@ -77,19 +77,19 @@
         <tr><td th:text="#{maleLifeExpectancy}"></td><td><span th:text="${#numbers.formatDecimal(society.maleLifeExpectancy,0,1)}">18.3</span></td></tr>
         <tr><td th:text="#{femaleLifeExpectancy}"></td><td><span th:text="${#numbers.formatDecimal(society.femaleLifeExpectancy,0,1)}">18.3</span></td></tr>
         <tr><td th:text="#{childrenBornPerWoman}"></td><td><span th:text="${#numbers.formatDecimal(society.childrenBornPerWoman,0,1)}">18.3</span></td></tr>
-        <tr><td th:text="#{contraceptivePrevalencePCT}"></td><td><span th:text="${#numbers.formatDecimal(society.contraceptivePrevalencePCT,0,1)}">18.3</span>%</td></tr>
-        <tr><td th:text="#{healthExpenditurePCT}"></td><td><span th:text="${#numbers.formatDecimal(society.healthExpenditurePCT,0,1)}">18.3</span>%</td></tr>
+        <tr><td th:text="#{contraceptivePrevalencePCT}"></td><td><span th:text="${#numbers.formatDecimal(society.contraceptivePrevalencePCT,0,1)}">18.3</span></td></tr>
+        <tr><td th:text="#{healthExpenditurePCT}"></td><td><span th:text="${#numbers.formatDecimal(society.healthExpenditurePCT,0,1)}">18.3</span></td></tr>
         <tr><td th:text="#{physiciansPer1K}"></td><td><span th:text="${#numbers.formatDecimal(society.physiciansPer1K,0,1)}">18.3</span></td></tr>
         <tr><td th:text="#{hospitalBedPer1K}"></td><td><span th:text="${#numbers.formatDecimal(society.hospitalBedPer1K,0,1)}">18.3</span></td></tr>
-        <tr><td th:text="#{improvedUrbanDrinkingWaterPCT}"></td><td><span th:text="${#numbers.formatDecimal(society.improvedUrbanDrinkingWaterPCT,0,1)}">18.3</span>%</td></tr>
-        <tr><td th:text="#{improvedRuralDrinkingWaterPCT}"></td><td><span th:text="${#numbers.formatDecimal(society.improvedRuralDrinkingWaterPCT,0,1)}">18.3</span>%</td></tr>
-        <tr><td th:text="#{improvedUrbanSanitationFacilityAccessPCT}"></td><td><span th:text="${#numbers.formatDecimal(society.improvedUrbanSanitationFacilityAccessPCT,0,1)}">18.3</span>%</td></tr>
-        <tr><td th:text="#{improvedRuralSanitationFacilityAccessPCT}"></td><td><span th:text="${#numbers.formatDecimal(society.improvedRuralSanitationFacilityAccessPCT,0,1)}">18.3</span>%</td></tr>
-        <tr><td th:text="#{improvedTotalSanitationFacilityAccessPCT}"></td><td><span th:text="${#numbers.formatDecimal(society.improvedTotalSanitationFacilityAccessPCT,0,1)}">18.3</span>%</td></tr>
-        <tr><td th:text="#{hIVAIDSPrevalencePCT}"></td><td><span th:text="${#numbers.formatDecimal(society.hIVAIDSPrevalencePCT,0,1)}">18.3</span>%</td></tr>
+        <tr><td th:text="#{improvedUrbanDrinkingWaterPCT}"></td><td><span th:text="${#numbers.formatDecimal(society.improvedUrbanDrinkingWaterPCT,0,1)}">18.3</span></td></tr>
+        <tr><td th:text="#{improvedRuralDrinkingWaterPCT}"></td><td><span th:text="${#numbers.formatDecimal(society.improvedRuralDrinkingWaterPCT,0,1)}">18.3</span></td></tr>
+        <tr><td th:text="#{improvedUrbanSanitationFacilityAccessPCT}"></td><td><span th:text="${#numbers.formatDecimal(society.improvedUrbanSanitationFacilityAccessPCT,0,1)}">18.3</span></td></tr>
+        <tr><td th:text="#{improvedRuralSanitationFacilityAccessPCT}"></td><td><span th:text="${#numbers.formatDecimal(society.improvedRuralSanitationFacilityAccessPCT,0,1)}">18.3</span></td></tr>
+        <tr><td th:text="#{improvedTotalSanitationFacilityAccessPCT}"></td><td><span th:text="${#numbers.formatDecimal(society.improvedTotalSanitationFacilityAccessPCT,0,1)}">18.3</span></td></tr>
+        <tr><td th:text="#{hIVAIDSPrevalencePCT}"></td><td><span th:text="${#numbers.formatDecimal(society.hIVAIDSPrevalencePCT,0,1)}">18.3</span></td></tr>
         <tr><td th:text="#{hIVAIDSAfflicted}"></td><td><span th:text="${#numbers.formatInteger(society.hIVAIDSAfflicted,0,'COMMA')}">233245</span></td></tr>
         <tr><td th:text="#{hIVAIDSDeaths}"></td><td><span th:text="${#numbers.formatInteger(society.hIVAIDSDeaths,0,'COMMA')}">233245</span></td></tr>
-        <tr><td th:text="#{adultObesityPCT}"></td><td><span th:text="${#numbers.formatDecimal(society.adultObesityPCT,0,1)}">18.3</span>%</td></tr>
+        <tr><td th:text="#{adultObesityPCT}"></td><td><span th:text="${#numbers.formatDecimal(society.adultObesityPCT,0,1)}">18.3</span></td></tr>
         <tr><td th:text="#{educationExpenditures}"></td><td><span th:text="${#numbers.formatDecimal(society.educationExpenditures,0,1)}">18.3</span></td></tr>
         <tr><td th:text="#{maleLiteracy}"></td><td><span th:text="${#numbers.formatDecimal(society.maleLiteracy,0,1)}">18.3</span></td></tr>
         <tr><td th:text="#{femaleLiteracy}"></td><td><span th:text="${#numbers.formatDecimal(society.femaleLiteracy ,0,1)}">18.3</span></td></tr>
@@ -146,39 +146,39 @@
         <tr><td width="5%" th:text="#{overview}"></td><td><span th:text="${economy.overview}"></span></td></tr>
         <tr><td th:text="#{gDPPurchasingPowerParity}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.gDPPurchasingPowerParity, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
         <tr><td th:text="#{gDPOfficialExchangeRate}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.gDPOfficialExchangeRate, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
-        <tr><td th:text="#{gDPRealGrowthRate}"></td><td><span th:text="${#numbers.formatDecimal(economy.gDPRealGrowthRate, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{gDPRealGrowthRate}"></td><td><span th:text="${#numbers.formatDecimal(economy.gDPRealGrowthRate, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
         <tr><td th:text="#{gDPPerCapita}"></td><td>$<span th:text="${#numbers.formatInteger(economy.gDPPerCapita,0,'COMMA')}"></span></td></tr>
-        <tr><td th:text="#{grossNationalSaving}"></td><td><span th:text="${#numbers.formatDecimal(economy.grossNationalSaving, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{householdConsumption}"></td><td><span th:text="${#numbers.formatDecimal(economy.householdConsumption, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{governmentConsumption}"></td><td><span th:text="${#numbers.formatDecimal(economy.governmentConsumption, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{investmentFixedCapital}"></td><td><span th:text="${#numbers.formatDecimal(economy.investmentFixedCapital, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{investmentInventories}"></td><td><span th:text="${#numbers.formatDecimal(economy.investmentInventories, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{exports}"></td><td><span th:text="${#numbers.formatDecimal(economy.exports, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{imports}"></td><td><span th:text="${#numbers.formatDecimal(economy.imports, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{gDPAgriculture}"></td><td><span th:text="${#numbers.formatDecimal(economy.gDPAgriculture, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{gDPIndustry}"></td><td><span th:text="${#numbers.formatDecimal(economy.gDPIndustry, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{gDPServices}"></td><td><span th:text="${#numbers.formatDecimal(economy.gDPServices, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{grossNationalSaving}"></td><td><span th:text="${#numbers.formatDecimal(economy.grossNationalSaving, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{householdConsumption}"></td><td><span th:text="${#numbers.formatDecimal(economy.householdConsumption, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{governmentConsumption}"></td><td><span th:text="${#numbers.formatDecimal(economy.governmentConsumption, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{investmentFixedCapital}"></td><td><span th:text="${#numbers.formatDecimal(economy.investmentFixedCapital, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{investmentInventories}"></td><td><span th:text="${#numbers.formatDecimal(economy.investmentInventories, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{exports}"></td><td><span th:text="${#numbers.formatDecimal(economy.exports, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{imports}"></td><td><span th:text="${#numbers.formatDecimal(economy.imports, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{gDPAgriculture}"></td><td><span th:text="${#numbers.formatDecimal(economy.gDPAgriculture, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{gDPIndustry}"></td><td><span th:text="${#numbers.formatDecimal(economy.gDPIndustry, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{gDPServices}"></td><td><span th:text="${#numbers.formatDecimal(economy.gDPServices, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
         <tr><td th:text="#{agricultureProducts}"></td><td><span th:text="${economy.agricultureProducts}"></span></td></tr>
         <tr><td th:text="#{industries}"></td><td><span th:text="${economy.industries}"></span></td></tr>
-        <tr><td th:text="#{industrialGrowth}"></td><td><span th:text="${#numbers.formatDecimal(economy.industrialGrowth, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{industrialGrowth}"></td><td><span th:text="${#numbers.formatDecimal(economy.industrialGrowth, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
         <tr><td th:text="#{laborForce}"></td><td><span th:text="${#numbers.formatInteger(economy.laborForce,0,'COMMA')}"></span></td></tr>
-        <tr><td th:text="#{occupationAgriculture}"></td><td><span th:text="${#numbers.formatDecimal(economy.occupationAgriculture, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{occupationIndustry}"></td><td><span th:text="${#numbers.formatDecimal(economy.occupationIndustry, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{occupationServices}"></td><td><span th:text="${#numbers.formatDecimal(economy.occupationServices, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{unemploymentRate}"></td><td><span th:text="${#numbers.formatDecimal(economy.unemploymentRate, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{belowPovertyLine}"></td><td><span th:text="${#numbers.formatDecimal(economy.belowPovertyLine, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{lowest10PCTConsumption}"></td><td><span th:text="${#numbers.formatDecimal(economy.lowest10PCTConsumption, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{highest10PCTConsumption}"></td><td><span th:text="${#numbers.formatDecimal(economy.highest10PCTConsumption, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{occupationAgriculture}"></td><td><span th:text="${#numbers.formatDecimal(economy.occupationAgriculture, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{occupationIndustry}"></td><td><span th:text="${#numbers.formatDecimal(economy.occupationIndustry, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{occupationServices}"></td><td><span th:text="${#numbers.formatDecimal(economy.occupationServices, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{unemploymentRate}"></td><td><span th:text="${#numbers.formatDecimal(economy.unemploymentRate, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{belowPovertyLine}"></td><td><span th:text="${#numbers.formatDecimal(economy.belowPovertyLine, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{lowest10PCTConsumption}"></td><td><span th:text="${#numbers.formatDecimal(economy.lowest10PCTConsumption, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{highest10PCTConsumption}"></td><td><span th:text="${#numbers.formatDecimal(economy.highest10PCTConsumption, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
         <tr><td th:text="#{giniIndexIncome}"></td><td><span th:text="${#numbers.formatDecimal(economy.giniIndexIncome, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
         <tr><td th:text="#{revenues}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.revenues, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
         <tr><td th:text="#{expenditures}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.expenditures, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
-        <tr><td th:text="#{taxes}"></td><td><span th:text="${#numbers.formatDecimal(economy.taxes, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{budgetSurplus}"></td><td><span th:text="${#numbers.formatDecimal(economy.budgetSurplus, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{publicDebt}"></td><td><span th:text="${#numbers.formatDecimal(economy.publicDebt, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{taxes}"></td><td><span th:text="${#numbers.formatDecimal(economy.taxes, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{budgetSurplus}"></td><td><span th:text="${#numbers.formatDecimal(economy.budgetSurplus, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{publicDebt}"></td><td><span th:text="${#numbers.formatDecimal(economy.publicDebt, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
         <tr><td th:text="#{fiscalYear}"></td><td><span th:text="${economy.fiscalYear}"></span></td></tr>
-        <tr><td th:text="#{inflation}"></td><td><span th:text="${#numbers.formatDecimal(economy.inflation, 0, 'COMMA', 1, 'POINT')}"></span>%</td>
-        <tr><td th:text="#{centralBankDiscount}"></td><td><span th:text="${#numbers.formatDecimal(economy.centralBankDiscount, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{commercialBankLending}"></td><td><span th:text="${#numbers.formatDecimal(economy.commercialBankLending, 0, 'COMMA', 1, 'POINT')}">%</span></td></tr>
+        <tr><td th:text="#{inflation}"></td><td><span th:text="${#numbers.formatDecimal(economy.inflation, 0, 'COMMA', 1, 'POINT')}"></span></td>
+        <tr><td th:text="#{centralBankDiscount}"></td><td><span th:text="${#numbers.formatDecimal(economy.centralBankDiscount, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{commercialBankLending}"></td><td><span th:text="${#numbers.formatDecimal(economy.commercialBankLending, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
         <tr><td th:text="#{narrowMoney}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.narrowMoney, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
         <tr><td th:text="#{broadMoney}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.broadMoney, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
         <tr><td th:text="#{domesticCredit}"></td><td>$<span th:text="${#numbers.formatDecimal(economy.domesticCredit, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
@@ -210,17 +210,17 @@
         </thead>
         <tbody>
         <tr><td width="5%" th:text="#{withoutElectricity}"></td><td><span th:text="${#numbers.formatInteger(energy.withoutElectricity,0,'COMMA')}"></span></td></tr>
-        <tr><td th:text="#{electrificationPopulationPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electrificationPopulationPCT, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{electrificationUrbanPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electrificationUrbanPCT, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{electrificationRuralPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electrificationRuralPCT, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{electrificationPopulationPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electrificationPopulationPCT, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{electrificationUrbanPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electrificationUrbanPCT, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{electrificationRuralPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electrificationRuralPCT, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
         <tr><td th:text="#{electricityProductionMillionskWh}"></td><td><span th:text="${#numbers.formatInteger(energy.electricityProductionMillionskWh,0,'COMMA')}"></span></td></tr>
         <tr><td th:text="#{electricityConsumptionMillionskWh}"></td><td><span th:text="${#numbers.formatInteger(energy.electricityConsumptionMillionskWh,0,'COMMA')}"></span></td></tr>
         <tr><td th:text="#{electricityExportsMillionskWh}"></td><td><span th:text="${#numbers.formatInteger(energy.electricityExportsMillionskWh,0,'COMMA')}"></span></td></tr>
         <tr><td th:text="#{electricityImportsMillionskWh}"></td><td><span th:text="${#numbers.formatInteger(energy.electricityImportsMillionskWh,0,'COMMA')}"></span></td></tr>
         <tr><td th:text="#{electricityCapacityThousandskW}"></td><td><span th:text="${#numbers.formatInteger(energy.electricityCapacityThousandskW,0,'COMMA')}"></span></td></tr>
-        <tr><td th:text="#{electricityFossilFuelsPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electricityFossilFuelsPCT, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{electricityNuclearFuelsPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electricityNuclearFuelsPCT, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
-        <tr><td th:text="#{electricityHydroelectricPlantsPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electricityHydroelectricPlantsPCT, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{electricityFossilFuelsPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electricityFossilFuelsPCT, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{electricityNuclearFuelsPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electricityNuclearFuelsPCT, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
+        <tr><td th:text="#{electricityHydroelectricPlantsPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electricityHydroelectricPlantsPCT, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
         <tr><td th:text="#{electricityOtherRenewableSourcesPCT}"></td><td><span th:text="${#numbers.formatDecimal(energy.electricityOtherRenewableSourcesPCT, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
         <tr><td th:text="#{oilProductionBarrelsPerDay}"></td><td><span th:text="${#numbers.formatInteger(energy.oilProductionBarrelsPerDay,0,'COMMA')}"></span></td></tr>
         <tr><td th:text="#{oilExportsBarrelsPerDay}"></td><td><span th:text="${#numbers.formatInteger(energy.oilExportsBarrelsPerDay,0,'COMMA')}"></span></td></tr>
@@ -260,7 +260,7 @@
         <tr><td th:text="#{broadcastMedia}"></td><td><span th:text="${communications.broadcastMedia}"></span></td></tr>
         <tr><td th:text="#{internetCode}"></td><td><span th:text="${communications.internetCode}"></span></td></tr>
         <tr><td th:text="#{internetUsers}"></td><td><span th:text="${#numbers.formatInteger(communications.internetUsers,0,'COMMA')}"></span></td></tr>
-        <tr><td th:text="#{internetUsersPCT}"></td><td><span th:text="${#numbers.formatDecimal(communications.internetUsersPCT, 0, 'COMMA', 1, 'POINT')}"></span>%</td></tr>
+        <tr><td th:text="#{internetUsersPCT}"></td><td><span th:text="${#numbers.formatDecimal(communications.internetUsersPCT, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
         </tbody>
       </table>
     </td></tr>
@@ -329,7 +329,7 @@
         <tr><td colspan="2"><span style="font-size: 23px;font-weight: bold" th:text="#{military}"></span></td></tr>
         </thead>
         <tbody>
-        <tr><td width="5%" th:text="#{militaryExpenditure}"></td><td><span th:text="${#numbers.formatDecimal(military.militaryExpenditure, 0, 'COMMA', 1, 'POINT')}"></span>% of GDP</td></tr>
+        <tr><td width="5%" th:text="#{militaryExpenditure}"></td><td><span th:text="${#numbers.formatDecimal(military.militaryExpenditure, 0, 'COMMA', 1, 'POINT')}"></span></td></tr>
         <tr><td th:text="#{militaryObligation}"></td><td><span th:text="${military.militaryObligation}"></span></td></tr>
         <tr><td th:text="#{militaryBranches}"></td><td><span th:text="${military.militaryBranches}"></span></td></tr>
         </tbody>
