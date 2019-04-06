@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class CountryController {
 
+    public static final int DATAYEAR = 2017;
+
     @Autowired
     private CountryMainRepository countryMainRepository;
     @Autowired
@@ -47,18 +49,18 @@ public class CountryController {
     @GetMapping(path="/country") // Map ONLY GET Requests
     public String getCountry (@RequestParam String countryName, Model model) {
 
-        CountryMain country = countryMainRepository.findCountryMainByCountryName(countryName);
+        CountryMain country = countryMainRepository.findCountryMainByCountryNameAndDataYear(countryName, DATAYEAR);
 
-        model.addAttribute("countryMain", countryMainRepository.findByCountryCode(country.getCountryCode()));
-        model.addAttribute("geography", geographyRepository.findByCountryCode(country.getCountryCode()));
-        model.addAttribute("society", societyRepository.findByCountryCode(country.getCountryCode()));
-        model.addAttribute("government", governmentRepository.findByCountryCode(country.getCountryCode()));
-        model.addAttribute("economy", economyRepository.findByCountryCode(country.getCountryCode()));
-        model.addAttribute("energy", energyRepository.findByCountryCode(country.getCountryCode()));
-        model.addAttribute("communications", communicationsRepository.findByCountryCode(country.getCountryCode()));
-        model.addAttribute("transportation", transportationRepository.findByCountryCode(country.getCountryCode()));
-        model.addAttribute("military", militaryRepository.findByCountryCode(country.getCountryCode()));
-        model.addAttribute("transnational", transnationalRepository.findByCountryCode(country.getCountryCode()));
+        model.addAttribute("countryMain", countryMainRepository.findByCountryCodeAndDataYear(country.getCountryCode(), DATAYEAR));
+        model.addAttribute("geography", geographyRepository.findByCountryCodeAndDataYear(country.getCountryCode(), DATAYEAR));
+        model.addAttribute("society", societyRepository.findByCountryCodeAndDataYear(country.getCountryCode(), DATAYEAR));
+        model.addAttribute("government", governmentRepository.findByCountryCodeAndDataYear(country.getCountryCode(), DATAYEAR));
+        model.addAttribute("economy", economyRepository.findByCountryCodeAndDataYear(country.getCountryCode(), DATAYEAR));
+        model.addAttribute("energy", energyRepository.findByCountryCodeAndDataYear(country.getCountryCode(), DATAYEAR));
+        model.addAttribute("communications", communicationsRepository.findByCountryCodeAndDataYear(country.getCountryCode(), DATAYEAR));
+        model.addAttribute("transportation", transportationRepository.findByCountryCodeAndDataYear(country.getCountryCode(), DATAYEAR));
+        model.addAttribute("military", militaryRepository.findByCountryCodeAndDataYear(country.getCountryCode(), DATAYEAR));
+        model.addAttribute("transnational", transnationalRepository.findByCountryCodeAndDataYear(country.getCountryCode(), DATAYEAR));
 
         model.addAttribute("countryFlag", country.getCountryCode().toLowerCase() + "-lgflag.gif");
         model.addAttribute("countryMap", country.getCountryCode().toLowerCase() + "-map.gif");

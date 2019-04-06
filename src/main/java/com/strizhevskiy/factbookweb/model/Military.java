@@ -16,6 +16,7 @@ public class Military {
     private int id;
 	
     private String countryCode;
+    private int dataYear;
     private double militaryExpenditure;
     private String militaryObligation;
     private String militaryBranches;

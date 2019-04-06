@@ -16,6 +16,7 @@ public class Transnational {
     private int id;
 	
     private String countryCode;
+    private int dataYear;
     private String disputes;
     private String refugees;
     private String iDPs;

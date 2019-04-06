@@ -5,5 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface TransportationRepository extends CrudRepository<Transportation, Integer> {
 
-    Transportation findByCountryCode(String countryCode);
+    Transportation findByCountryCodeAndDataYear(String countryCode, int dataYear);
 }

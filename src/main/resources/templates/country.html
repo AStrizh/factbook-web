@@ -9,9 +9,25 @@
 
 <body>
 
-  <h1><span th:text="${countryMain.countryName}">France</span></h1>
+<table width = "100%">
+  <tr><td bgcolor="white">
+    <img th:src="@{/images/erudos.png}" style="width:25%;height:45%;"/>
+
+  </td>
+    <td align="right" bgcolor="white"><h2>The World Fact Book</h2></td>
+  </tr>
+  <tr><td colspan="2" bgcolor="white"><hr></td></tr>
+  <tr><td colspan="2" align="right" bgcolor="white"><a href="http://www.logintomyapp.com">Login</a></td></tr>
+
+  <tr><td colspan="2" align="left" bgcolor="white">
+    <h1><span th:text="${countryMain.countryName}">France</span></h1>
+  </td></tr>
+  <tr><td align="center" bgcolor="white" width="50%">
   <img th:src="@{${'/images/flags/' + countryFlag}}">
+  </td><td align="left" bgcolor="white"  width="50%">
   <img th:src="@{${'/images/maps/' + countryMap}}">
+  </td></tr>
+</table>
   <br>
   <div th:text="${countryMain.introduction}"></div>
 

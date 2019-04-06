@@ -16,6 +16,7 @@ public class Society {
     private int id;
 	
     private String countryCode;
+    private int dataYear;
     private int population;
     private int Male0_14;
     private int Female0_14;

@@ -16,6 +16,7 @@ public class Communications {
     private int id;
 
     private String countryCode;
+    private int dataYear;
     private int totalFixedLines;
     private int fixedLinesPer100;
     private int totalCellular;

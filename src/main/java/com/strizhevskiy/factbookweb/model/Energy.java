@@ -16,6 +16,7 @@ public class Energy {
     private int id;
 
     private String countryCode;
+    private int dataYear;
     private int withoutElectricity;
     private double electrificationPopulationPCT;
     private double electrificationUrbanPCT;

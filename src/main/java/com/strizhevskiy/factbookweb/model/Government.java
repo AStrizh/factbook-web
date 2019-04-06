@@ -16,6 +16,7 @@ public class Government {
     private int id;
 	
     private String countryCode;
+    private int dataYear;
     private String governmentType;
     private double capitalLat;
     private double capitalLng;

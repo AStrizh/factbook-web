@@ -5,5 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface CommunicationsRepository extends CrudRepository<Communications, Integer> {
 
-    Communications findByCountryCode(String countryCode);
+    Communications findByCountryCodeAndDataYear(String countryCode, int dataYear);
 }

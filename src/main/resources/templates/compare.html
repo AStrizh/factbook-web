@@ -8,6 +8,18 @@
 </head>
 <body>
 
+<table width = "100%">
+  <tr><td bgcolor="white">
+    <img th:src="@{/images/erudos.png}" style="width:25%;height:45%;"/>
+
+  </td>
+    <td align="right" bgcolor="white"><h2>The World Fact Book</h2></td>
+  </tr>
+  <tr><td colspan="2" bgcolor="white"><hr></td></tr>
+  <tr><td colspan="2" align="right" bgcolor="white"><a href="http://www.logintomyapp.com">Login</a></td></tr>
+</table>
+
+
 <h1>Welcome to Country Compare</h1>
 <!--<h3 th:each="countryMain : ${wrapper.countryMainList}" th:text="${countryMain.countryName}"></h3>-->
 
@@ -17,7 +29,7 @@
     <table class="main-table">
       <thead>
       <tr>
-        <th class="fixed-side" scope="col">&nbsp;</th>
+        <th class="fixed-side" scope="col" th:text="#{geography}"></th>
         <th scope="col" th:each="countryMain : ${wrapper.countryMainList}" th:text="${countryMain.countryName}"></th>
       </tr>
       </thead>
@@ -32,6 +44,12 @@
         <td th:each="geography : ${wrapper.geographyList}" th:text="${#numbers.formatDecimal(geography.waterArea, 0, 'COMMA', 0, 'POINT')}"></td>
       </tr>
 
+      <thead>
+      <tr>
+        <th class="fixed-side" scope="col" th:text="#{society}"></th>
+        <th scope="col" th:each="countryMain : ${wrapper.countryMainList}" th:text="${countryMain.countryName}"></th>
+      </tr>
+      </thead>
       <tr>
         <th class="fixed-side" th:text="#{population}"></th>
         <td th:each="society : ${wrapper.societyList}" th:text="${#numbers.formatInteger(society.population,0,'COMMA')}"></td>
@@ -65,6 +83,12 @@
         <td th:each="society : ${wrapper.societyList}" th:text="${#numbers.formatDecimal(society.educationExpenditures,0,1)}"></td>
       </tr>
 
+      <thead>
+      <tr>
+        <th class="fixed-side" scope="col" th:text="#{government}"></th>
+        <th scope="col" th:each="countryMain : ${wrapper.countryMainList}" th:text="${countryMain.countryName}"></th>
+      </tr>
+      </thead>
       <tr>
         <th class="fixed-side" th:text="#{governmentType}"></th>
         <td th:each="government : ${wrapper.governmentList}" th:text="${government.governmentType}"></td>
@@ -74,6 +98,12 @@
         <td th:each="government : ${wrapper.governmentList}" th:text="${government.naturalization}"></td>
       </tr>
 
+      <thead>
+      <tr>
+        <th class="fixed-side" scope="col" th:text="#{economy}"></th>
+        <th scope="col" th:each="countryMain : ${wrapper.countryMainList}" th:text="${countryMain.countryName}"></th>
+      </tr>
+      </thead>
       <tr>
         <th class="fixed-side" th:text="#{gDPPurchasingPowerParity}"></th>
         <td th:each="economy : ${wrapper.economyList}" th:text="${#numbers.formatDecimal(economy.gDPPurchasingPowerParity, 0, 'COMMA', 1, 'POINT')}"></td>
@@ -134,6 +164,12 @@
         <td th:each="economy : ${wrapper.economyList}" th:text="${#numbers.formatDecimal(economy.exchangeRate, 0, 'COMMA', 1, 'POINT')}"></td>
       </tr>
 
+      <thead>
+      <tr>
+        <th class="fixed-side" scope="col" th:text="#{energy}"></th>
+        <th scope="col" th:each="countryMain : ${wrapper.countryMainList}" th:text="${countryMain.countryName}"></th>
+      </tr>
+      </thead>
       <tr>
         <th class="fixed-side" th:text="#{withoutElectricity}"></th>
         <td th:each="energy : ${wrapper.energyList}" th:text="${#numbers.formatInteger(energy.withoutElectricity,0,'COMMA')}"></td>
@@ -147,6 +183,12 @@
         <td th:each="energy : ${wrapper.energyList}" th:text="${#numbers.formatInteger(energy.refinedPetroleumConsumptionBarrelsPerDay,0,'COMMA')}"></td>
       </tr>
 
+      <thead>
+      <tr>
+        <th class="fixed-side" scope="col" th:text="#{communications}"></th>
+        <th scope="col" th:each="countryMain : ${wrapper.countryMainList}" th:text="${countryMain.countryName}"></th>
+      </tr>
+      </thead>
       <tr>
         <th class="fixed-side" th:text="#{fixedLinesPer100}"></th>
         <td th:each="communications : ${wrapper.communicationsList}" th:text="${#numbers.formatInteger(communications.fixedLinesPer100,0,'COMMA')}"></td>
@@ -160,6 +202,12 @@
         <td th:each="communications : ${wrapper.communicationsList}" th:text="${communications.internetCode}"></td>
       </tr>
 
+      <thead>
+      <tr>
+        <th class="fixed-side" scope="col" th:text="#{military}"></th>
+        <th scope="col" th:each="countryMain : ${wrapper.countryMainList}" th:text="${countryMain.countryName}"></th>
+      </tr>
+      </thead>
       <tr>
         <th class="fixed-side" th:text="#{militaryExpenditure}"></th>
         <td th:each="military : ${wrapper.militaryList}" th:text="${#numbers.formatDecimal(military.militaryExpenditure, 0, 'COMMA', 1, 'POINT')}"></td>

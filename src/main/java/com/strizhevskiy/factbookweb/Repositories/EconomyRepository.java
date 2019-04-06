@@ -5,5 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface EconomyRepository extends CrudRepository<Economy, Integer> {
 
-    Economy findByCountryCode(String countryCode);
+    Economy findByCountryCodeAndDataYear(String countryCode, int dataYear);
 }

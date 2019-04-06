@@ -16,6 +16,7 @@ public class Border {
     private int id;
 
     private String countryCode;
+    private int dataYear;
     private String borderCountry;
     private double borderLength;
 }

@@ -16,6 +16,7 @@ public class Geography {
     private int id;
 	
     private String countryCode;
+    private int dataYear;
     private double lat;
     private double lng;
     private double landArea;

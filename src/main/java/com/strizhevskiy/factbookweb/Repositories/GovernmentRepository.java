@@ -5,5 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface GovernmentRepository extends CrudRepository<Government, Integer> {
 
-    Government findByCountryCode(String countryCode);
+    Government findByCountryCodeAndDataYear(String countryCode, int dataYear);
 }

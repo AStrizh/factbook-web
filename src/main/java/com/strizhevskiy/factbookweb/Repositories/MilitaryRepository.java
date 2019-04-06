@@ -5,5 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface MilitaryRepository extends CrudRepository<Military, Integer> {
 
-    Military findByCountryCode(String countryCode);
+    Military findByCountryCodeAndDataYear(String countryCode, int dataYear);
 }

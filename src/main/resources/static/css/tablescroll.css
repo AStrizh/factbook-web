@@ -15,6 +15,10 @@
     border-collapse:separate;
     border-spacing:0;
 }
+.table-scroll tbody{
+    height:600px;
+    overflow:auto;
+}
 .table-scroll th, .table-scroll td {
     padding:5px 10px;
     border:1px solid #000;

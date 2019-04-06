@@ -16,6 +16,7 @@ public class CountryMain {
     private int id;
 
     private String countryCode;
+    private int dataYear;
     private String countryName;
     private String region;
     private String introduction;

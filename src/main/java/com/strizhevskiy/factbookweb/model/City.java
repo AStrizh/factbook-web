@@ -16,6 +16,7 @@ public class City {
     private int id;
 
     private String countryCode;
+    private int dataYear;
     private String cityName;
     private int population;
     private Boolean capital;

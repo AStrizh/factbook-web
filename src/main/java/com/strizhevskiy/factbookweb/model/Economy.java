@@ -16,6 +16,7 @@ public class Economy {
     private int id;
 
     private String countryCode;
+    private int dataYear;
     private String overview;
     private double gDPPurchasingPowerParity;
     private double gDPOfficialExchangeRate;

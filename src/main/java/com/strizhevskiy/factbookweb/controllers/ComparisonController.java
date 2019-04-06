@@ -13,6 +13,8 @@ import java.util.List;
 @Controller
 public class ComparisonController {
 
+    public static final int DATAYEAR = 2017;
+
     @Autowired
     private CountryMainRepository countryMainRepository;
     @Autowired
@@ -32,22 +34,24 @@ public class ComparisonController {
     @Autowired
     private TransportationRepository transportationRepository;
 
+
     @GetMapping("/compare")
     public String compareCountries(@RequestParam("countryNames") List<String> countryNames, Model model){
         CountriesWrapper countriesWrapper = new CountriesWrapper();
 
         for( String countryName : countryNames){
-            String countryCode = countryMainRepository.findCountryMainByCountryName(countryName).getCountryCode();
+            String countryCode = countryMainRepository.findCountryMainByCountryNameAndDataYear(countryName, DATAYEAR).getCountryCode();
 
-            countriesWrapper.getCountryMainList().add(countryMainRepository.findByCountryCode(countryCode));
-            countriesWrapper.getGeographyList().add(geographyRepository.findByCountryCode(countryCode));
-            countriesWrapper.getSocietyList().add(societyRepository.findByCountryCode(countryCode));
-            countriesWrapper.getGovernmentList().add(governmentRepository.findByCountryCode(countryCode));
-            countriesWrapper.getEconomyList().add(economyRepository.findByCountryCode(countryCode));
-            countriesWrapper.getEnergyList().add(energyRepository.findByCountryCode(countryCode));
-            countriesWrapper.getCommunicationsList().add(communicationsRepository.findByCountryCode(countryCode));
-            countriesWrapper.getTransportationList().add(transportationRepository.findByCountryCode(countryCode));
-            countriesWrapper.getMilitaryList().add(militaryRepository.findByCountryCode(countryCode));
+            countriesWrapper.getCountryMainList().add(countryMainRepository.findByCountryCodeAndDataYear(countryCode, DATAYEAR));
+            countriesWrapper.getGeographyList().add(geographyRepository.findByCountryCodeAndDataYear(countryCode, DATAYEAR));
+            countriesWrapper.getSocietyList().add(societyRepository.findByCountryCodeAndDataYear(countryCode, DATAYEAR));
+            countriesWrapper.getGovernmentList().add(governmentRepository.findByCountryCodeAndDataYear(countryCode, DATAYEAR));
+            countriesWrapper.getEconomyList().add(economyRepository.findByCountryCodeAndDataYear(countryCode, DATAYEAR));
+            countriesWrapper.getEnergyList().add(energyRepository.findByCountryCodeAndDataYear(countryCode, DATAYEAR));
+            countriesWrapper.getCommunicationsList().add(communicationsRepository.findByCountryCodeAndDataYear(countryCode, DATAYEAR));
+            countriesWrapper.getTransportationList().add(transportationRepository.findByCountryCodeAndDataYear(countryCode, DATAYEAR));
+            countriesWrapper.getMilitaryList().add(militaryRepository.findByCountryCodeAndDataYear(countryCode, DATAYEAR));
+
         }
 
         model.addAttribute("wrapper", countriesWrapper);

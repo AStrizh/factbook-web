@@ -16,6 +16,7 @@ public class Transportation {
     private int id;
 	
     private String countryCode;
+    private int dataYear;
     private int registeredAirCarriers;
     private int airCarriersAircraft;
     private int airCarrierPassengers;
