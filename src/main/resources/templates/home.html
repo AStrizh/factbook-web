@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Country Select</title>
 </head>
-<body>
+<body style = "background-color: #ebebe0" >
 <table width = "100%">
 <tr><td>
     <img th:src="@{/images/erudos.png}" style="width:25%;height:45%;"/>
@@ -13,7 +13,6 @@
 <td align="right"><h2>The World Fact Book</h2></td>
 </tr>
     <tr><td colspan="2"><hr></td></tr>
-    <tr><td colspan="2" align="right"><a href="http://www.logintomyapp.com">Login</a></td></tr>
 </table>
 
     <h1 th:text="#{greeting}"></h1>
@@ -27,14 +26,18 @@
     <br>
     <h3>Select Countries for comparison</h3>
     <form th:action="@{/compare}" method="get">
-        <div th:each="country : ${countries}" >
-            <input type="checkbox" th:value="${country}" th:name="countryNames"/>
-            <label th:text="${country}"></label>
+        <div style="height:360px;width:300px;border:1px solid #ccc;overflow:auto;">
+            <div th:each="country : ${countries}" >
+                <input type="checkbox" th:value="${country}" th:name="countryNames"/>
+                <label th:text="${country}"></label>
+            </div>
         </div>
         <br />
         <input type="submit" />
     </form>
 
+    <br>
+    <h3>Use advanced query builder <a th:href="@{/queryBuilder}">here</a> </h3>
 
 
 </body>

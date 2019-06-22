@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Country Query Results</title>
+</head>
+<body style = "background-color: #ebebe0" >
+
+<table width = "100%">
+  <tr><td>
+    <img th:src="@{/images/erudos.png}" style="width:25%;height:45%;"/>
+
+  </td>
+    <td align="right"><h2>The World Fact Book</h2></td>
+  </tr>
+</table>
+
+<table border="1">
+
+    <th th:each="category : ${categories}" th:text="#{${category}}">
+    <tr th:each="answer : ${results}" th:value="${answer}">
+      <td th:each="subanswer: ${answer}" th:text="${subanswer}"> </td>
+    </tr>
+
+</table>
+</body>
+</html>

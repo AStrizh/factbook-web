@@ -2,11 +2,11 @@ h1 {
     color: #78ab46;
 }
 
-tr:nth-child(odd) {
+.country-section tr:nth-child(odd) {
     background: #eeeeee;
 }
 
-tr:nth-child(even) {
+.country-section tr:nth-child(even) {
     background: white;
 }
 
