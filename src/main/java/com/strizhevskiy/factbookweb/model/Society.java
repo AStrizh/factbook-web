@@ -38,7 +38,7 @@ public class Society {
     private double birthRatePer1K;
     private double deathRatePer1K;
     private double netMigrationRate;
-    private int urbanPopulation;
+    private double urbanPopulation;
     private double urbanizationRate;
     private double motherMeanAgeAtFirstBirth;
     private int maternalMortalityRatePer100K;
@@ -70,11 +70,7 @@ public class Society {
     private double maleUnemployment;
     private double femaleUnemployment;
 
-    public int totalMale(){
-        return (Male0_14 + Male15_24 + Male25_54 + Male55_64 + Male65);
-    }
+    private int totalMale;
+    private int totalFemale;
 
-    public int totalFemale(){
-        return (Female0_14 + Female15_24 + Female25_54 + Female55_64 + Female65);
-    }
 }

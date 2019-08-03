@@ -55,11 +55,11 @@
       </tr>
       <tr>
         <th class="fixed-side">Male Population</th>
-        <td th:each="society : ${wrapper.societyList}" th:text="${#numbers.formatInteger(society.totalMale(),0,'COMMA')}"></td>
+        <td th:each="society : ${wrapper.societyList}" th:text="${#numbers.formatInteger(society.totalMale,0,'COMMA')}"></td>
       </tr>
       <tr>
         <th class="fixed-side">Female Population</th>
-        <td th:each="society : ${wrapper.societyList}" th:text="${#numbers.formatInteger(society.totalFemale(),0,'COMMA')}"></td>
+        <td th:each="society : ${wrapper.societyList}" th:text="${#numbers.formatInteger(society.totalFemale,0,'COMMA')}"></td>
       </tr>
       <tr>
         <th class="fixed-side" th:text="#{maleLifeExpectancy}"></th>

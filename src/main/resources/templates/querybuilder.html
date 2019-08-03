@@ -45,65 +45,69 @@
 
         <td>
           <span class="section_title" th:text="#{geography}"></span>
-          <div><input type="checkbox" th:value="Geography.landArea" th:name="params"/><label th:text="#{landArea}"></label></div>
-          <div><input type="checkbox" th:value="Geography.waterArea" th:name="params"/><label th:text="#{waterArea}"></label></div>
-          <div><input type="checkbox" th:value="Geography.landBoundaries" th:name="params"/><label th:text="#{landBoundaries}"></label></div>
+          <div><input type="checkbox" th:value="Geography.totalArea" th:name="params"/><label th:text="#{totalArea}"></label></div>
           <div><input type="checkbox" th:value="Geography.coastline" th:name="params"/><label th:text="#{coastline}"></label></div>
-          <div><input type="checkbox" th:value="Geography.meanElevation" th:name="params"/><label th:text="#{meanElevation}"></label></div>
-          <div><input type="checkbox" th:value="Geography.lowestPointDistance" th:name="params"/><label th:text="#{lowestPointDistance}"></label></div>
-          <div><input type="checkbox" th:value="Geography.highestPointDistance" th:name="params"/><label th:text="#{highestPointDistance}"></label></div>
           <div><input type="checkbox" th:value="Geography.irrigatedLand" th:name="params"/><label th:text="#{irrigatedLand}"></label></div>
+          <!--<div><input type="checkbox" th:value="Geography.landArea" th:name="params"/><label th:text="#{landArea}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Geography.waterArea" th:name="params"/><label th:text="#{waterArea}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Geography.landBoundaries" th:name="params"/><label th:text="#{landBoundaries}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Geography.meanElevation" th:name="params"/><label th:text="#{meanElevation}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Geography.lowestPointDistance" th:name="params"/><label th:text="#{lowestPointDistance}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Geography.highestPointDistance" th:name="params"/><label th:text="#{highestPointDistance}"></label></div>-->
         </td>
 
 
         <td>
           <span class="section_title" th:text="#{society}"></span>
           <div><input type="checkbox" th:value="Society.population" th:name="params"/><label th:text="#{population}"></label></div>
-          <div><input type="checkbox" th:value="Society.Male0_14" th:name="params"/><label th:text="#{Male0_14}"></label></div>
-          <div><input type="checkbox" th:value="Society.Female0_14" th:name="params"/><label th:text="#{Female0_14}"></label></div>
-          <div><input type="checkbox" th:value="Society.Male15_24" th:name="params"/><label th:text="#{Male15_24}"></label></div>
-          <div><input type="checkbox" th:value="Society.Female15_24" th:name="params"/><label th:text="#{Female15_24}"></label></div>
-          <div><input type="checkbox" th:value="Society.Male25_54" th:name="params"/><label th:text="#{Male25_54}"></label></div>
-          <div><input type="checkbox" th:value="Society.Female25_54" th:name="params"/><label th:text="#{Female25_54}"></label></div>
-          <div><input type="checkbox" th:value="Society.Male55_64" th:name="params"/><label th:text="#{Male55_64}"></label></div>
-          <div><input type="checkbox" th:value="Society.Female55_64" th:name="params"/><label th:text="#{Female55_64}"></label></div>
-          <div><input type="checkbox" th:value="Society.Male65" th:name="params"/><label th:text="#{Male65}"></label></div>
-          <div><input type="checkbox" th:value="Society.Female65" th:name="params"/><label th:text="#{Female65}"></label></div>
+          <div><input type="checkbox" th:value="Society.totalMale" th:name="params"/><label th:text="#{totalMale}"></label></div>
+          <div><input type="checkbox" th:value="Society.totalFemale" th:name="params"/><label th:text="#{totalFemale}"></label></div>
+          <div><input type="checkbox" th:value="Society.populationGrowthRate" th:name="params"/><label th:text="#{populationGrowthRate}"></label></div>
+          <div><input type="checkbox" th:value="Society.urbanPopulation" th:name="params"/><label th:text="#{urbanPopulation}"></label></div>
+          <div><input type="checkbox" th:value="Society.urbanizationRate" th:name="params"/><label th:text="#{urbanizationRate}"></label></div>
+          <div><input type="checkbox" th:value="Society.maleLifeExpectancy" th:name="params"/><label th:text="#{maleLifeExpectancy}"></label></div>
+          <div><input type="checkbox" th:value="Society.femaleLifeExpectancy" th:name="params"/><label th:text="#{femaleLifeExpectancy}"></label></div>
+          <div><input type="checkbox" th:value="Society.maleUnemployment" th:name="params"/><label th:text="#{maleUnemployment}"></label></div>
+          <div><input type="checkbox" th:value="Society.femaleUnemployment" th:name="params"/><label th:text="#{femaleUnemployment}"></label></div>
+          <div><input type="checkbox" th:value="Society.healthExpenditurePCT" th:name="params"/><label th:text="#{healthExpenditurePCT}"></label></div>
+          <div><input type="checkbox" th:value="Society.educationExpenditures" th:name="params"/><label th:text="#{educationExpenditures}"></label></div>
+          <!--<div><input type="checkbox" th:value="Society.Male0_14" th:name="params"/><label th:text="#{Male0_14}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.Female0_14" th:name="params"/><label th:text="#{Female0_14}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.Male15_24" th:name="params"/><label th:text="#{Male15_24}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.Female15_24" th:name="params"/><label th:text="#{Female15_24}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.Male25_54" th:name="params"/><label th:text="#{Male25_54}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.Female25_54" th:name="params"/><label th:text="#{Female25_54}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.Male55_64" th:name="params"/><label th:text="#{Male55_64}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.Female55_64" th:name="params"/><label th:text="#{Female55_64}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.Male65" th:name="params"/><label th:text="#{Male65}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.Female65" th:name="params"/><label th:text="#{Female65}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Society.youthDependencyRatio" th:name="params"/><label th:text="#{youthDependencyRatio}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Society.elderlyDependencyRatio" th:name="params"/><label th:text="#{elderlyDependencyRatio}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Society.potentialSupportRatio" th:name="params"/><label th:text="#{potentialSupportRatio}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Society.medianAgeMale" th:name="params"/><label th:text="#{medianAgeMale}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Society.medianAgeFemale" th:name="params"/><label th:text="#{medianAgeFemale}"></label></div>-->
-          <div><input type="checkbox" th:value="Society.populationGrowthRate" th:name="params"/><label th:text="#{populationGrowthRate}"></label></div>
-          <div><input type="checkbox" th:value="Society.birthRatePer1K" th:name="params"/><label th:text="#{birthRatePer1K}"></label></div>
-          <div><input type="checkbox" th:value="Society.deathRatePer1K" th:name="params"/><label th:text="#{deathRatePer1K}"></label></div>
-          <div><input type="checkbox" th:value="Society.netMigrationRate" th:name="params"/><label th:text="#{netMigrationRate}"></label></div>
-          <div><input type="checkbox" th:value="Society.urbanPopulation" th:name="params"/><label th:text="#{urbanPopulation}"></label></div>
-          <div><input type="checkbox" th:value="Society.urbanizationRate" th:name="params"/><label th:text="#{urbanizationRate}"></label></div>
-          <div><input type="checkbox" th:value="Society.motherMeanAgeAtFirstBirth" th:name="params"/><label th:text="#{motherMeanAgeAtFirstBirth}"></label></div>
-          <div><input type="checkbox" th:value="Society.maternalMortalityRatePer100K" th:name="params"/><label th:text="#{maternalMortalityRatePer100K}"></label></div>
-          <div><input type="checkbox" th:value="Society.infantMaleMortalityRatePer1K" th:name="params"/><label th:text="#{infantMaleMortalityRatePer1K}"></label></div>
-          <div><input type="checkbox" th:value="Society.infantFemaleMortalityRatePer1K" th:name="params"/><label th:text="#{infantFemaleMortalityRatePer1K}"></label></div>
-          <div><input type="checkbox" th:value="Society.maleLifeExpectancy" th:name="params"/><label th:text="#{maleLifeExpectancy}"></label></div>
-          <div><input type="checkbox" th:value="Society.femaleLifeExpectancy" th:name="params"/><label th:text="#{femaleLifeExpectancy}"></label></div>
-          <div><input type="checkbox" th:value="Society.childrenBornPerWoman" th:name="params"/><label th:text="#{childrenBornPerWoman}"></label></div>
-          <div><input type="checkbox" th:value="Society.contraceptivePrevalencePCT" th:name="params"/><label th:text="#{contraceptivePrevalencePCT}"></label></div>
-          <div><input type="checkbox" th:value="Society.healthExpenditurePCT" th:name="params"/><label th:text="#{healthExpenditurePCT}"></label></div>
-          <div><input type="checkbox" th:value="Society.physiciansPer1K" th:name="params"/><label th:text="#{physiciansPer1K}"></label></div>
-          <div><input type="checkbox" th:value="Society.hospitalBedPer1K" th:name="params"/><label th:text="#{hospitalBedPer1K}"></label></div>
+          <!--<div><input type="checkbox" th:value="Society.motherMeanAgeAtFirstBirth" th:name="params"/><label th:text="#{motherMeanAgeAtFirstBirth}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.maternalMortalityRatePer100K" th:name="params"/><label th:text="#{maternalMortalityRatePer100K}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.infantMaleMortalityRatePer1K" th:name="params"/><label th:text="#{infantMaleMortalityRatePer1K}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.infantFemaleMortalityRatePer1K" th:name="params"/><label th:text="#{infantFemaleMortalityRatePer1K}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.childrenBornPerWoman" th:name="params"/><label th:text="#{childrenBornPerWoman}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.contraceptivePrevalencePCT" th:name="params"/><label th:text="#{contraceptivePrevalencePCT}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.physiciansPer1K" th:name="params"/><label th:text="#{physiciansPer1K}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.hospitalBedPer1K" th:name="params"/><label th:text="#{hospitalBedPer1K}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.birthRatePer1K" th:name="params"/><label th:text="#{birthRatePer1K}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.deathRatePer1K" th:name="params"/><label th:text="#{deathRatePer1K}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.netMigrationRate" th:name="params"/><label th:text="#{netMigrationRate}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Society.improvedUrbanDrinkingWaterPCT" th:name="params"/><label th:text="#{improvedUrbanDrinkingWaterPCT}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Society.improvedRuralDrinkingWaterPCT" th:name="params"/><label th:text="#{improvedRuralDrinkingWaterPCT}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Society.improvedUrbanSanitationFacilityAccessPCT" th:name="params"/><label th:text="#{improvedUrbanSanitationFacilityAccessPCT}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Society.improvedRuralSanitationFacilityAccessPCT" th:name="params"/><label th:text="#{improvedRuralSanitationFacilityAccessPCT}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Society.improvedTotalSanitationFacilityAccessPCT" th:name="params"/><label th:text="#{improvedTotalSanitationFacilityAccessPCT}"></label></div>-->
-          <div><input type="checkbox" th:value="Society.adultObesityPCT" th:name="params"/><label th:text="#{adultObesityPCT}"></label></div>
-          <div><input type="checkbox" th:value="Society.educationExpenditures" th:name="params"/><label th:text="#{educationExpenditures}"></label></div>
-          <div><input type="checkbox" th:value="Society.maleLiteracy" th:name="params"/><label th:text="#{maleLiteracy}"></label></div>
-          <div><input type="checkbox" th:value="Society.femaleLiteracy" th:name="params"/><label th:text="#{femaleLiteracy}"></label></div>
-          <div><input type="checkbox" th:value="Society.maleSchoolLifeExpectancy" th:name="params"/><label th:text="#{maleSchoolLifeExpectancy}"></label></div>
-          <div><input type="checkbox" th:value="Society.femaleSchoolLifeExpectancy" th:name="params"/><label th:text="#{femaleSchoolLifeExpectancy}"></label></div>
-          <div><input type="checkbox" th:value="Society.maleUnemployment" th:name="params"/><label th:text="#{maleUnemployment}"></label></div>
-          <div><input type="checkbox" th:value="Society.femaleUnemployment" th:name="params"/><label th:text="#{femaleUnemployment}"></label></div>
+          <!--<div><input type="checkbox" th:value="Society.adultObesityPCT" th:name="params"/><label th:text="#{adultObesityPCT}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.maleLiteracy" th:name="params"/><label th:text="#{maleLiteracy}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.femaleLiteracy" th:name="params"/><label th:text="#{femaleLiteracy}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.maleSchoolLifeExpectancy" th:name="params"/><label th:text="#{maleSchoolLifeExpectancy}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Society.femaleSchoolLifeExpectancy" th:name="params"/><label th:text="#{femaleSchoolLifeExpectancy}"></label></div>-->
+
         </td>
 
 
@@ -111,9 +115,13 @@
         <td>
           <span class="section_title" th:text="#{economy}"></span>
           <div><input type="checkbox" th:value="Economy.gDPPurchasingPowerParity" th:name="params"/><label th:text="#{gDPPurchasingPowerParity}"></label></div>
-          <!--<div><input type="checkbox" th:value="Economy.gDPOfficialExchangeRate" th:name="params"/><label th:text="#{gDPOfficialExchangeRate}"></label></div>-->
           <div><input type="checkbox" th:value="Economy.gDPRealGrowthRate" th:name="params"/><label th:text="#{gDPRealGrowthRate}"></label></div>
           <div><input type="checkbox" th:value="Economy.gDPPerCapita" th:name="params"/><label th:text="#{gDPPerCapita}"></label></div>
+          <div><input type="checkbox" th:value="Economy.laborForce" th:name="params"/><label th:text="#{laborForce}"></label></div>
+          <div><input type="checkbox" th:value="Economy.unemploymentRate" th:name="params"/><label th:text="#{unemploymentRate}"></label></div>
+          <div><input type="checkbox" th:value="Economy.belowPovertyLine" th:name="params"/><label th:text="#{belowPovertyLine}"></label></div>
+          <div><input type="checkbox" th:value="Economy.exchangeRate" th:name="params"/><label th:text="#{exchangeRate}"></label></div>
+          <!--<div><input type="checkbox" th:value="Economy.gDPOfficialExchangeRate" th:name="params"/><label th:text="#{gDPOfficialExchangeRate}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Economy.grossNationalSaving" th:name="params"/><label th:text="#{grossNationalSaving}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Economy.householdConsumption" th:name="params"/><label th:text="#{householdConsumption}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Economy.governmentConsumption" th:name="params"/><label th:text="#{governmentConsumption}"></label></div>-->
@@ -121,26 +129,23 @@
           <!--<div><input type="checkbox" th:value="Economy.investmentInventories" th:name="params"/><label th:text="#{investmentInventories}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Economy.exports" th:name="params"/><label th:text="#{exports}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Economy.imports" th:name="params"/><label th:text="#{imports}"></label></div>-->
-          <div><input type="checkbox" th:value="Economy.exportsTotal" th:name="params"/><label th:text="#{exportsTotal}"></label></div>
-          <div><input type="checkbox" th:value="Economy.importsTotal" th:name="params"/><label th:text="#{importsTotal}"></label></div>
-          <div><input type="checkbox" th:value="Economy.gDPAgriculture" th:name="params"/><label th:text="#{gDPAgriculture}"></label></div>
-          <div><input type="checkbox" th:value="Economy.gDPIndustry" th:name="params"/><label th:text="#{gDPIndustry}"></label></div>
-          <div><input type="checkbox" th:value="Economy.gDPServices" th:name="params"/><label th:text="#{gDPServices}"></label></div>
-          <div><input type="checkbox" th:value="Economy.industrialGrowth" th:name="params"/><label th:text="#{industrialGrowth}"></label></div>
-          <div><input type="checkbox" th:value="Economy.laborForce" th:name="params"/><label th:text="#{laborForce}"></label></div>
-          <div><input type="checkbox" th:value="Economy.occupationAgriculture" th:name="params"/><label th:text="#{occupationAgriculture}"></label></div>
-          <div><input type="checkbox" th:value="Economy.occupationIndustry" th:name="params"/><label th:text="#{occupationIndustry}"></label></div>
-          <div><input type="checkbox" th:value="Economy.unemploymentRate" th:name="params"/><label th:text="#{unemploymentRate}"></label></div>
-          <div><input type="checkbox" th:value="Economy.belowPovertyLine" th:name="params"/><label th:text="#{belowPovertyLine}"></label></div>
-          <div><input type="checkbox" th:value="Economy.lowest10PCTConsumption" th:name="params"/><label th:text="#{lowest10PCTConsumption}"></label></div>
-          <div><input type="checkbox" th:value="Economy.highest10PCTConsumption" th:name="params"/><label th:text="#{highest10PCTConsumption}"></label></div>
+          <!--<div><input type="checkbox" th:value="Economy.exportsTotal" th:name="params"/><label th:text="#{exportsTotal}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Economy.importsTotal" th:name="params"/><label th:text="#{importsTotal}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Economy.gDPAgriculture" th:name="params"/><label th:text="#{gDPAgriculture}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Economy.gDPIndustry" th:name="params"/><label th:text="#{gDPIndustry}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Economy.gDPServices" th:name="params"/><label th:text="#{gDPServices}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Economy.industrialGrowth" th:name="params"/><label th:text="#{industrialGrowth}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Economy.occupationAgriculture" th:name="params"/><label th:text="#{occupationAgriculture}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Economy.occupationIndustry" th:name="params"/><label th:text="#{occupationIndustry}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Economy.lowest10PCTConsumption" th:name="params"/><label th:text="#{lowest10PCTConsumption}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Economy.highest10PCTConsumption" th:name="params"/><label th:text="#{highest10PCTConsumption}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Economy.revenues" th:name="params"/><label th:text="#{revenues}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Economy.expenditures" th:name="params"/><label th:text="#{expenditures}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Economy.taxes" th:name="params"/><label th:text="#{taxes}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Economy.budgetSurplus" th:name="params"/><label th:text="#{budgetSurplus}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Economy.publicDebt" th:name="params"/><label th:text="#{publicDebt}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Economy.inflation" th:name="params"/><label th:text="#{inflation}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Economy.giniIndexIncome" th:name="params"/><label th:text="#{giniIndexIncome}"></label></div>-->
-          <div><input type="checkbox" th:value="Economy.revenues" th:name="params"/><label th:text="#{revenues}"></label></div>
-          <div><input type="checkbox" th:value="Economy.expenditures" th:name="params"/><label th:text="#{expenditures}"></label></div>
-          <div><input type="checkbox" th:value="Economy.taxes" th:name="params"/><label th:text="#{taxes}"></label></div>
-          <div><input type="checkbox" th:value="Economy.budgetSurplus" th:name="params"/><label th:text="#{budgetSurplus}"></label></div>
-          <div><input type="checkbox" th:value="Economy.publicDebt" th:name="params"/><label th:text="#{publicDebt}"></label></div>
-          <div><input type="checkbox" th:value="Economy.inflation" th:name="params"/><label th:text="#{inflation}"></label></div>
           <!--<div><input type="checkbox" th:value="Economy.centralBankDiscount" th:name="params"/><label th:text="#{centralBankDiscount}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Economy.commercialBankLending" th:name="params"/><label th:text="#{commercialBankLending}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Economy.narrowMoney" th:name="params"/><label th:text="#{narrowMoney}"></label></div>-->
@@ -152,16 +157,17 @@
           <!--<div><input type="checkbox" th:value="Economy.debtExternal" th:name="params"/><label th:text="#{debtExternal}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Economy.foreignInvestmentHome" th:name="params"/><label th:text="#{foreignInvestmentHome}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Economy.foreignInvestmentAbroad" th:name="params"/><label th:text="#{foreignInvestmentAbroad}"></label></div>-->
-          <div><input type="checkbox" th:value="Economy.exchangeRate" th:name="params"/><label th:text="#{exchangeRate}"></label></div>
+
         </td>
 
         <td>
           <span class="section_title" th:text="#{communications}"></span>
-          <div><input type="checkbox" th:value="Communications.totalFixedLines" th:name="params"/><label th:text="#{totalFixedLines}"></label></div>
-          <div><input type="checkbox" th:value="Communications.fixedLinesPer100" th:name="params"/><label th:text="#{fixedLinesPer100}"></label></div>
-          <div><input type="checkbox" th:value="Communications.cellularPer100" th:name="params"/><label th:text="#{cellularPer100}"></label></div>
           <div><input type="checkbox" th:value="Communications.internetUsers" th:name="params"/><label th:text="#{internetUsers}"></label></div>
           <div><input type="checkbox" th:value="Communications.internetUsersPCT" th:name="params"/><label th:text="#{internetUsersPCT}"></label></div>
+          <!--<div><input type="checkbox" th:value="Communications.totalFixedLines" th:name="params"/><label th:text="#{totalFixedLines}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Communications.fixedLinesPer100" th:name="params"/><label th:text="#{fixedLinesPer100}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Communications.cellularPer100" th:name="params"/><label th:text="#{cellularPer100}"></label></div>-->
+
         </td>
 
         <td>
@@ -173,42 +179,42 @@
           <!--<div><input type="checkbox" th:value="Energy.electricityExportsMillionskWh" th:name="params"/><label th:text="#{electricityExportsMillionskWh}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Energy.electricityImportsMillionskWh" th:name="params"/><label th:text="#{electricityImportsMillionskWh}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Energy.electricityCapacityThousandskW" th:name="params"/><label th:text="#{electricityCapacityThousandskW}"></label></div>-->
-          <div><input type="checkbox" th:value="Energy.electricityFossilFuelsPCT" th:name="params"/><label th:text="#{electricityFossilFuelsPCT}"></label></div>
-          <div><input type="checkbox" th:value="Energy.electricityNuclearFuelsPCT" th:name="params"/><label th:text="#{electricityNuclearFuelsPCT}"></label></div>
-          <div><input type="checkbox" th:value="Energy.electricityHydroelectricPlantsPCT" th:name="params"/><label th:text="#{electricityHydroelectricPlantsPCT}"></label></div>
-          <div><input type="checkbox" th:value="Energy.electricityOtherRenewableSourcesPCT" th:name="params"/><label th:text="#{electricityOtherRenewableSourcesPCT}"></label></div>
-          <div><input type="checkbox" th:value="Energy.oilProductionBarrelsPerDay" th:name="params"/><label th:text="#{oilProductionBarrelsPerDay}"></label></div>
-          <div><input type="checkbox" th:value="Energy.oilExportsBarrelsPerDay" th:name="params"/><label th:text="#{oilExportsBarrelsPerDay}"></label></div>
-          <div><input type="checkbox" th:value="Energy.oilImportsBarrelsPerDay" th:name="params"/><label th:text="#{oilImportsBarrelsPerDay}"></label></div>
-          <div><input type="checkbox" th:value="Energy.oilProvedReservesThousandsBarrels" th:name="params"/><label th:text="#{oilProvedReservesThousandsBarrels}"></label></div>
+          <!--<div><input type="checkbox" th:value="Energy.electricityFossilFuelsPCT" th:name="params"/><label th:text="#{electricityFossilFuelsPCT}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Energy.electricityNuclearFuelsPCT" th:name="params"/><label th:text="#{electricityNuclearFuelsPCT}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Energy.electricityHydroelectricPlantsPCT" th:name="params"/><label th:text="#{electricityHydroelectricPlantsPCT}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Energy.electricityOtherRenewableSourcesPCT" th:name="params"/><label th:text="#{electricityOtherRenewableSourcesPCT}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Energy.oilProductionBarrelsPerDay" th:name="params"/><label th:text="#{oilProductionBarrelsPerDay}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Energy.oilExportsBarrelsPerDay" th:name="params"/><label th:text="#{oilExportsBarrelsPerDay}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Energy.oilImportsBarrelsPerDay" th:name="params"/><label th:text="#{oilImportsBarrelsPerDay}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Energy.oilProvedReservesThousandsBarrels" th:name="params"/><label th:text="#{oilProvedReservesThousandsBarrels}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Energy.refinedPetroleumProductionBarrelsPerDay" th:name="params"/><label th:text="#{refinedPetroleumProductionBarrelsPerDay}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Energy.refinedPetroleumConsumptionBarrelsPerDay" th:name="params"/><label th:text="#{refinedPetroleumConsumptionBarrelsPerDay}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Energy.refinedPetroleumExportsBarrelsPerDay" th:name="params"/><label th:text="#{refinedPetroleumExportsBarrelsPerDay}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Energy.refinedPetroleumImportsBarrelsPerDay" th:name="params"/><label th:text="#{refinedPetroleumImportsBarrelsPerDay}"></label></div>-->
-          <div><input type="checkbox" th:value="Energy.naturalGasProductionMillionCubicMeters" th:name="params"/><label th:text="#{naturalGasProductionMillionCubicMeters}"></label></div>
-          <div><input type="checkbox" th:value="Energy.naturalGasConsumptionMillionCubicMeters" th:name="params"/><label th:text="#{naturalGasConsumptionMillionCubicMeters}"></label></div>
-          <div><input type="checkbox" th:value="Energy.naturalGasExportsMillionCubicMeters" th:name="params"/><label th:text="#{naturalGasExportsMillionCubicMeters}"></label></div>
-          <div><input type="checkbox" th:value="Energy.naturalGasImportsMillionCubicMeters" th:name="params"/><label th:text="#{naturalGasImportsMillionCubicMeters}"></label></div>
-          <div><input type="checkbox" th:value="Energy.naturalGasProvedReservesMillionCubicMeters" th:name="params"/><label th:text="#{naturalGasProvedReservesMillionCubicMeters}"></label></div>
-          <div><input type="checkbox" th:value="Energy.carbonDioxideEmissionsThousandsMetricTons" th:name="params"/><label th:text="#{carbonDioxideEmissionsThousandsMetricTons}"></label></div>
+          <!--<div><input type="checkbox" th:value="Energy.naturalGasProductionMillionCubicMeters" th:name="params"/><label th:text="#{naturalGasProductionMillionCubicMeters}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Energy.naturalGasConsumptionMillionCubicMeters" th:name="params"/><label th:text="#{naturalGasConsumptionMillionCubicMeters}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Energy.naturalGasExportsMillionCubicMeters" th:name="params"/><label th:text="#{naturalGasExportsMillionCubicMeters}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Energy.naturalGasImportsMillionCubicMeters" th:name="params"/><label th:text="#{naturalGasImportsMillionCubicMeters}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Energy.naturalGasProvedReservesMillionCubicMeters" th:name="params"/><label th:text="#{naturalGasProvedReservesMillionCubicMeters}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Energy.carbonDioxideEmissionsThousandsMetricTons" th:name="params"/><label th:text="#{carbonDioxideEmissionsThousandsMetricTons}"></label></div>-->
         </td>
 
         <td>
           <span class="section_title" th:text="#{transportation}"></span>
-          <div><input type="checkbox" th:value="Transportation.registeredAirCarriers" th:name="params"/><label th:text="#{registeredAirCarriers}"></label></div>
-          <div><input type="checkbox" th:value="Transportation.airCarriersAircraft" th:name="params"/><label th:text="#{airCarriersAircraft}"></label></div>
-          <div><input type="checkbox" th:value="Transportation.airCarrierPassengers" th:name="params"/><label th:text="#{airCarrierPassengers}"></label></div>
-          <div><input type="checkbox" th:value="Transportation.airCarrierFreight" th:name="params"/><label th:text="#{airCarrierFreight}"></label></div>
           <div><input type="checkbox" th:value="Transportation.totalAirports" th:name="params"/><label th:text="#{totalAirports}"></label></div>
+          <div><input type="checkbox" th:value="Transportation.pavedRoadwaysKM" th:name="params"/><label th:text="#{pavedRoadwaysKM}"></label></div>
+          <div><input type="checkbox" th:value="Transportation.registeredAirCarriers" th:name="params"/><label th:text="#{registeredAirCarriers}"></label></div>
+          <!--<div><input type="checkbox" th:value="Transportation.airCarriersAircraft" th:name="params"/><label th:text="#{airCarriersAircraft}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Transportation.airCarrierPassengers" th:name="params"/><label th:text="#{airCarrierPassengers}"></label></div>-->
+          <!--<div><input type="checkbox" th:value="Transportation.airCarrierFreight" th:name="params"/><label th:text="#{airCarrierFreight}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Transportation.pavedRunways" th:name="params"/><label th:text="#{pavedRunways}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Transportation.unpavedRunways" th:name="params"/><label th:text="#{unpavedRunways}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Transportation.heliports" th:name="params"/><label th:text="#{heliports}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Transportation.totalRailwayKM" th:name="params"/><label th:text="#{totalRailwayKM}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Transportation.totalRoadwaysKM" th:name="params"/><label th:text="#{totalRoadwaysKM}"></label></div>-->
-          <!--<div><input type="checkbox" th:value="Transportation.pavedRoadwaysKM" th:name="params"/><label th:text="#{pavedRoadwaysKM}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Transportation.unpavedRoadwaysKM" th:name="params"/><label th:text="#{unpavedRoadwaysKM}"></label></div>-->
           <!--<div><input type="checkbox" th:value="Transportation.waterwaysKM" th:name="params"/><label th:text="#{waterwaysKM}"></label></div>-->
-          <div><input type="checkbox" th:value="Transportation.merchantMarine" th:name="params"/><label th:text="#{merchantMarine}"></label></div>
+          <!--<div><input type="checkbox" th:value="Transportation.merchantMarine" th:name="params"/><label th:text="#{merchantMarine}"></label></div>-->
         </td>
 
 
@@ -283,9 +289,11 @@
            "            <option value=\"Society.population\" > "+[[#{population}]]+" </option>\n" +
            "            <option value=\"Society.populationGrowthRate\" > "+[[#{populationGrowthRate}]]+" </option>\n" +
            "            <option value=\"Society.urbanPopulation\" > "+[[#{urbanPopulation}]]+" </option>\n" +
+           "            <option value=\"Society.urbanizationRate\" > "+[[#{urbanizationRate}]]+" </option>\n" +
            "            <option value=\"Society.motherMeanAgeAtFirstBirth\" > "+[[#{motherMeanAgeAtFirstBirth}]]+" </option>\n" +
            "            <option value=\"Society.physiciansPer1K\" > "+[[#{physiciansPer1K}]]+" </option>\n" +
            "            <option value=\"Economy.gDPOfficialExchangeRate\" > "+[[#{gDPOfficialExchangeRate}]]+" </option>\n" +
+           "            <option value=\"Military.militaryExpenditure\" > "+[[#{militaryExpenditure}]]+" </option>\n" +
            "          </select>";
 
        var hrefPlus = "&nbsp";//"<a href=\"javascript:filterGen()\">+</a>";
