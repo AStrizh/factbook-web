@@ -20,6 +20,9 @@
 
 
 <h1>Welcome to Country Compare</h1>
+<span>Here you will see attributes for your selected countries in a neat list.
+  The attributes themselves are in red while the sections are in black.</span> <br>
+
 <!--<h3 th:each="countryMain : ${wrapper.countryMainList}" th:text="${countryMain.countryName}"></h3>-->
 
 <div id="table-scroll" class="table-scroll">
@@ -28,7 +31,7 @@
     <table class="main-table">
       <thead>
       <tr>
-        <th class="fixed-side" scope="col" th:text="#{geography}"></th>
+        <th class="fixed-side" scope="col" style="font-size:20px;font-weight: bold;" th:text="#{geography}"></th>
         <th scope="col" th:each="countryMain : ${wrapper.countryMainList}" th:text="${countryMain.countryName}"></th>
       </tr>
       </thead>
@@ -45,7 +48,7 @@
 
       <thead>
       <tr>
-        <th class="fixed-side" scope="col" th:text="#{society}"></th>
+        <th class="fixed-side" scope="col" style="font-size:20px;font-weight: bold;" th:text="#{society}"></th>
         <th scope="col" th:each="countryMain : ${wrapper.countryMainList}" th:text="${countryMain.countryName}"></th>
       </tr>
       </thead>
@@ -84,7 +87,7 @@
 
       <thead>
       <tr>
-        <th class="fixed-side" scope="col" th:text="#{government}"></th>
+        <th class="fixed-side" scope="col" style="font-size:20px;font-weight: bold;" th:text="#{government}"></th>
         <th scope="col" th:each="countryMain : ${wrapper.countryMainList}" th:text="${countryMain.countryName}"></th>
       </tr>
       </thead>
@@ -99,7 +102,7 @@
 
       <thead>
       <tr>
-        <th class="fixed-side" scope="col" th:text="#{economy}"></th>
+        <th class="fixed-side" scope="col" style="font-size:20px;font-weight: bold;" th:text="#{economy}"></th>
         <th scope="col" th:each="countryMain : ${wrapper.countryMainList}" th:text="${countryMain.countryName}"></th>
       </tr>
       </thead>
@@ -165,7 +168,7 @@
 
       <thead>
       <tr>
-        <th class="fixed-side" scope="col" th:text="#{energy}"></th>
+        <th class="fixed-side" scope="col" style="font-size:20px;font-weight: bold;" th:text="#{energy}"></th>
         <th scope="col" th:each="countryMain : ${wrapper.countryMainList}" th:text="${countryMain.countryName}"></th>
       </tr>
       </thead>
@@ -184,7 +187,7 @@
 
       <thead>
       <tr>
-        <th class="fixed-side" scope="col" th:text="#{communications}"></th>
+        <th class="fixed-side" scope="col" style="font-size:20px;font-weight: bold;" th:text="#{communications}"></th>
         <th scope="col" th:each="countryMain : ${wrapper.countryMainList}" th:text="${countryMain.countryName}"></th>
       </tr>
       </thead>
@@ -203,7 +206,7 @@
 
       <thead>
       <tr>
-        <th class="fixed-side" scope="col" th:text="#{military}"></th>
+        <th class="fixed-side" scope="col" style="font-size:20px;font-weight: bold;" th:text="#{military}"></th>
         <th scope="col" th:each="countryMain : ${wrapper.countryMainList}" th:text="${countryMain.countryName}"></th>
       </tr>
       </thead>

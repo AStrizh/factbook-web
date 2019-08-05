@@ -16,6 +16,13 @@
 </table>
 
     <h1 th:text="#{greeting}"></h1>
+    <span>The goal of this project is to allow CIA Factbook users to study the factbook data in a more comprehensive manner.</span><br>
+    <span>Note #1: Not all attributes are available. We had to decide which were most relevant for research and discovery.</span><br>
+    <span>Note #2: All information is from the 2017 CIA Factbook.</span>
+
+
+    <h3>Country Select</h3>
+    <p>Country select lets you look at Factbook data for a specific country, as you would from the official website.</p>
     <form style="display:inline-block" th:action="@{/country}" method="get" Id="SelectCountry">
         <select class="countries" name="countryName" onchange="doPageSubmit()">
             <option value="0" th:text="#{select}"></option>
@@ -24,7 +31,9 @@
     </form>
 
     <br>
-    <h3>Select Countries for comparison</h3>
+    <h3>Country Compare</h3>
+    <p>Country compare lets you select several countries and view their data back to back.</p>
+    <span>Select Countries for comparison</span>
     <form th:action="@{/compare}" method="get">
         <div style="height:360px;width:300px;border:1px solid #ccc;overflow:auto;">
             <div th:each="country : ${countries}" >
@@ -37,7 +46,9 @@
     </form>
 
     <br>
-    <h3>Use advanced query builder <a th:href="@{/queryBuilder}">here</a> </h3>
+    <h3>Query Builder</h3>
+    <p>The query builder lets you select which attributes you are interested in and filter on specific criteria.</p>
+    <span>Use query builder <a th:href="@{/queryBuilder}">here</a> </span>
 
 
 </body>
