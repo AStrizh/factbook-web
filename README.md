@@ -6,13 +6,15 @@ Use the Java Spring Framework to create a REST web application that can return J
  
 Current Status:  
 The application can retrieve country data from the database created in [FactbookProject](https://github.com/AStrizh/FactbookProject) 
-and show that country's data.  
+and show that country's data. An option to compare and contrast statistics between several countries has been implemented. 
+
+The most interesting feature, querying the database for countries that match certain statistical characteristics is now also available.
 
 As of last update:  
-All country sections can be examined. If a section is absent it will not show up in the country view.
+The web application can be tested at: [strizhevskiy.com](http://www.strizhevskiy.com) 
 
 Next Steps:  
-Create the ability to compare statistics for two nations.
+Implement REST features.
 
 ## Process
 
